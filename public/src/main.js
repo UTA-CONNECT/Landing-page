@@ -4,7 +4,7 @@ window.onload = () => {
     });
     var hrellax = new Rellax('.hrellax', {
         horizontal:true,
-        vertical: true
+        vertical:false
         //Disable vertical Parallax Scrolling     vertical:false
     });
 }

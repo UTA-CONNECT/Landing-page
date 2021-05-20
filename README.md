@@ -1,5 +1,6 @@
 # Landing-page
 
+![img](public/img/web-withillustration.png)
 
 ## Library
 

@@ -20,7 +20,7 @@ div.conne-top-container {
     /* position: absolute; */
     margin-top: 37px;
     top: 37px;
-    padding: 0;
+    /* padding: 0; */
     background-image: url('../img/conne_chan.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -35,6 +35,17 @@ div.date-place-info {
     transform: rotate(7deg);
     font-size: 1.5em;
     letter-spacing: 7px;
+    /* padding: 20px; */
+}
+
+div.date-place-info-small {
+    /* margin-top: 7%; */
+    margin-top: 40px;
+    text-align: center;
+    transform: rotate(7deg);
+    font-size: 1.2em;
+    letter-spacing: 7px;
+    /* padding: 20px; */
 }
 
 img.title {

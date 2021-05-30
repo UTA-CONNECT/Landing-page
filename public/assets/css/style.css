@@ -1,0 +1,43 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/patterns.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.connechan {
+    margin-top: 37px;
+}
+
+img.connechan {
+    width: 100%;
+}
+
+div.conne-top-container { 
+    /* position: absolute; */
+    margin-top: 37px;
+    top: 37px;
+    padding: 0;
+    background-image: url('../img/conne_chan.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+}
+
+div.date-place-info {
+    /* margin-top: 7%; */
+    margin-top: 40px;
+    text-align: center;
+    transform: rotate(7deg);
+    font-size: 1.5em;
+    letter-spacing: 7px;
+}
+
+img.title {
+    margin-top: 300px;
+    width: 100%;
+}

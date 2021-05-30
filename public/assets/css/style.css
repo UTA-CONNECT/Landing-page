@@ -16,6 +16,36 @@ img.connechan {
     width: 100%;
 }
 
+div.conne-top-container-back {
+
+    position: absolute;
+    z-index: -1;
+    /* position: absolute; */
+    margin-top: 37px;
+    top: 37px;
+    /* padding: 0; */
+    background-image: url('../img/conne_chan_solid.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+}
+
+div.conne-top-container-small-back {
+
+    position: absolute;
+    z-index: -1;
+    /* position: absolute; */
+    margin-top: 0px;
+    top: 37px;
+    /* padding: 0; */
+    background-image: url('../img/conne_chan_solid.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+}
+
 div.conne-top-container { 
     /* position: absolute; */
     margin-top: 37px;

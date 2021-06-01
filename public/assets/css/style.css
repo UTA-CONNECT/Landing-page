@@ -72,6 +72,7 @@ div.conne-top-container-small {
 
 div.date-place-info {
     /* margin-top: 7%; */
+    font-weight: bold;
     margin-top: 40px;
     text-align: center;
     transform: rotate(7deg);
@@ -82,6 +83,7 @@ div.date-place-info {
 
 div.date-place-info-small {
     /* margin-top: 7%; */
+    font-weight: bold;
     margin-top: 40px;
     text-align: center;
     transform: rotate(7deg);

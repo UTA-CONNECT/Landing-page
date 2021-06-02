@@ -2,10 +2,10 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url('../img/patterns.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url('../img/patterns.png'), url('../img/stars.png');
+    background-repeat: repeat, repeat;
+    background-position: center, center;
+    /* background-size: contain, contain; */
 }
 
 div.connechan {
@@ -20,10 +20,22 @@ div.title-ribbon {
     position: absolute;
     z-index: -4;
     margin-top: 365px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 div.title-ribbon img{
     width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    div.title-ribbon img{
+        width: 100vw;
+    }
+}
+div.title-ribbon div {
+    padding: 0;
 }
 
 div.conne-top-container-back {

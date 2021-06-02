@@ -16,6 +16,16 @@ img.connechan {
     width: 100%;
 }
 
+div.title-ribbon {
+    position: absolute;
+    z-index: -4;
+    margin-top: 365px;
+}
+
+div.title-ribbon img{
+    width: 100%;
+}
+
 div.conne-top-container-back {
 
     position: absolute;

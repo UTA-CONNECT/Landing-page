@@ -1,12 +1,31 @@
 
+html, body {
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+  margin: 0;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-image: url('../img/patterns.png'), url('../img/stars.png'); /* multi background image*/
-    background-repeat: repeat, repeat;
-    background-position: center, center;
+    background-image: url('../img/patterns.png'), url('../img/stars.png'), url(../img/dot_circles.png); /* multi background image*/
+    background-repeat: repeat, repeat, repeat;
+    background-position: center, center, top;
     /* background-size: contain, contain; */
 }
+
+/* div.circle-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    pointer-events: none;
+    background-image: url(../img/dot_circles.png);
+    background-repeat: repeat;
+    background-position: top;
+    top: 0;
+    bottom: 0;
+} */
 
 div.connechan {
     margin-top: 37px;

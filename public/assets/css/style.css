@@ -2,7 +2,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url('../img/patterns.png'), url('../img/stars.png');
+    background-image: url('../img/patterns.png'), url('../img/stars.png'); /* multi background image*/
     background-repeat: repeat, repeat;
     background-position: center, center;
     /* background-size: contain, contain; */

@@ -139,6 +139,45 @@ div.conne-sd-ribbon-top-bg div div{
     background-repeat: no-repeat;
 }
 
+div.conne-sd-large-ticket-row {
+    position: absolute;
+    width: 100%;
+    z-index: -1999;
+    top: 0px;
+    right: 0;
+}
+
+div.conne-sd-large-ticket-col {
+    position: relative;
+}
+
+div.conne-sd-large-ticket-col img {
+    width: 80%;
+    visibility: hidden;
+}
+
+div.conne-sd-large-ticket-col div.conne-sd-large-ticket-bg {
+    height: 100%;
+    position: absolute;
+    z-index: -1000;
+    top: 250px;
+    left: -50px;
+    padding: 0;
+    /* top: 120px;
+    right: 215px; */
+}
+
+div.conne-sd-large-ticket-bg div{
+    height: 100%;
+}
+
+div.conne-sd-large-ticket-bg div div{
+    background-image: url('../img/ticket_large.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 @media (max-width: 576px) {
     div.conne-sd-quote-bg {
         top: 80px !important;
@@ -164,6 +203,10 @@ div.conne-sd-ribbon-top-bg div div{
         visibility: hidden;
         display: none;
     }
+
+    div.conne-sd-large-ticket-bg {
+        left: -50px !important;
+    }
 }
 @media (min-width: 768px) {
     div.conne-sd-ribbon-bottom-bg {
@@ -174,6 +217,11 @@ div.conne-sd-ribbon-top-bg div div{
         top: 350px !important;
         left: -5px !important;
     }
+
+    div.conne-sd-large-ticket-bg {
+        top: 175px !important;
+        left: -75px !important;
+    }
 }
 @media (min-width: 992px) {
     div.conne-sd-ribbon-bottom-bg {
@@ -182,6 +230,11 @@ div.conne-sd-ribbon-top-bg div div{
 
     div.conne-sd-ribbon-top-bg {
         top: 400px !important;
+    }
+
+    div.conne-sd-large-ticket-bg {
+        top: 225px !important;
+        left: -50px !important;
     }
 }
 @media (min-width: 1200px) {
@@ -192,6 +245,11 @@ div.conne-sd-ribbon-top-bg div div{
         top: 100px !important;
         left: 0px !important;
     }
+
+    div.conne-sd-large-ticket-bg {
+        top: 175px !important;
+        left: -50px !important;
+    }
 }
 @media (min-width: 1400px) {
     div.conne-sd-ribbon-bottom-bg {
@@ -200,5 +258,10 @@ div.conne-sd-ribbon-top-bg div div{
     div.conne-sd-ribbon-top-bg {
         top: 50px !important;
         left: 5px !important;
+    }
+
+    div.conne-sd-large-ticket-bg {
+        top: 200px !important;
+        left: 0px !important;
     }
 }

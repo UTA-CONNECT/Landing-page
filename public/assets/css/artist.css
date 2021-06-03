@@ -13,6 +13,7 @@ div.conne-sd-col div.conne-sd-bg {
     z-index: -999;
     top: 90px;
     width: 90%;
+    animation: cartoonRotate 2s infinite;
 }
 
 div.conne-sd-col div.conne-sd-bg div{
@@ -48,6 +49,7 @@ div.conne-sd-quote-col div.conne-sd-quote-bg {
     z-index: -999;
     top: 120px;
     right: 215px;
+    animation: cartoonRotateFlip 2s infinite;
 }
 
 div.conne-sd-quote-col div.conne-sd-quote-bg div{

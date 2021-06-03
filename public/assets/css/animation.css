@@ -3,3 +3,39 @@
         transform: translatey(50px);
     }
 }
+
+@keyframes cartoonRotate {
+    0% {
+        transform: rotate(-5deg);
+    }
+    49% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    99% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes cartoonRotateFlip {
+    0% {
+        transform: rotate(5deg);
+    }
+    49% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    99% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}

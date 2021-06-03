@@ -25,3 +25,38 @@ div.conne-sd-col div.conne-sd-bg div div{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+div.conne-sd-quote-row {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 80px;
+}
+
+div.conne-sd-quote-col {
+    position: relative;
+}
+
+div.conne-sd-quote-col img {
+    width: 60%;
+    visibility: hidden;
+}
+
+div.conne-sd-quote-col div.conne-sd-quote-bg {
+    height: 100%;
+    position: absolute;
+    z-index: -999;
+    top: 120px;
+    right: 215px;
+}
+
+div.conne-sd-quote-col div.conne-sd-quote-bg div{
+    height: 100%;
+}
+
+div.conne-sd-quote-col div.conne-sd-quote-bg div div{
+    background-image: url('../img/quote.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

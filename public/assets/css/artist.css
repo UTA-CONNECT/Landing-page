@@ -60,3 +60,66 @@ div.conne-sd-quote-col div.conne-sd-quote-bg div div{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+div.conne-sd-ribbon-bottom-row {
+    position: absolute;
+    width: 100%;
+    z-index: 1999;
+    top: 334px;
+    right: 200px;
+}
+
+div.conne-sd-ribbon-bottom-col {
+    position: relative;
+}
+
+div.conne-sd-ribbon-bottom-col img {
+    width: 80%;
+    visibility: hidden;
+}
+
+div.conne-sd-ribbon-bottom-col div.conne-sd-ribbon-bottom-bg {
+    height: 100%;
+    position: absolute;
+    z-index: -1000;
+    top: 4px;
+    /* top: 120px;
+    right: 215px; */
+}
+
+div.conne-sd-ribbon-bottom-bg div{
+    height: 100%;
+}
+
+div.conne-sd-ribbon-bottom-bg div div{
+    background-image: url('../img/ribbon_top_2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    div.conne-sd-ribbon-bottom-bg {
+        visibility: hidden;
+    }
+}
+@media (min-width: 768px) {
+    div.conne-sd-ribbon-bottom-bg {
+        top: -30px !important;
+    }
+}
+@media (min-width: 992px) {
+    div.conne-sd-ribbon-bottom-bg {
+        top: 75px !important;
+    }
+}
+@media (min-width: 1200px) {
+    div.conne-sd-ribbon-bottom-bg {
+        top: -45px !important;
+    }
+}
+@media (min-width: 1400px) {
+    div.conne-sd-ribbon-bottom-bg {
+        top: 4px !important;
+    }
+}

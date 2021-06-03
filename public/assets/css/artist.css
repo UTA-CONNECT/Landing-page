@@ -1,0 +1,26 @@
+div.conne-sd-col {
+    position: relative;
+}
+
+div.conne-sd-col img {
+    width: 100%;
+    visibility: hidden;
+}
+
+div.conne-sd-col div.conne-sd-bg {
+    height: 100%;
+    position: absolute;
+    z-index: -999;
+    top: 80px
+}
+
+div.conne-sd-col div.conne-sd-bg div{
+    height: 100%;
+}
+
+div.conne-sd-col div.conne-sd-bg div div{
+    background-image: url('../img/conne_chan_sd.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

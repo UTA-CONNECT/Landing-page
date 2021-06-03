@@ -100,7 +100,19 @@ div.conne-sd-ribbon-bottom-bg div div{
     background-repeat: no-repeat;
 }
 
+@media (max-width: 576px) {
+    div.conne-sd-quote-bg {
+        top: 80px !important;
+        right: 170px !important;
+    }
+
+    div.conne-sd-bg {
+        top: 75px !important;
+    }
+}
+
 @media (max-width: 767px) {
+
     div.conne-sd-ribbon-bottom-bg {
         visibility: hidden;
     }

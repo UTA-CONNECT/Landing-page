@@ -156,8 +156,13 @@ div.conne-sd-ribbon-top-bg div div{
         visibility: hidden;
     }
 
+    div.conne-sd-ribbon-top-col {
+        display: none;
+    }
+
     div.conne-sd-ribbon-top-bg {
         visibility: hidden;
+        display: none;
     }
 }
 @media (min-width: 768px) {

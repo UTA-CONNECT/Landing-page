@@ -204,8 +204,17 @@ div.conne-sd-large-ticket-bg div div{
         display: none;
     }
 
-    div.conne-sd-large-ticket-bg {
+    div.conne-sd-large-ticket-row {
         left: -50px !important;
+    }
+
+    div.conne-sd-large-ticket-bg {
+        left: -25px !important;
+        padding: 0;
+    }
+    div.conne-sd-large-ticket-col img{
+        /* width: 80%; */
+        /* display: none; */
     }
 }
 @media (min-width: 768px) {
@@ -219,8 +228,8 @@ div.conne-sd-large-ticket-bg div div{
     }
 
     div.conne-sd-large-ticket-bg {
-        top: 175px !important;
-        left: -75px !important;
+        top: 205px !important;
+        left: -25px !important;
     }
 }
 @media (min-width: 992px) {
@@ -233,8 +242,8 @@ div.conne-sd-large-ticket-bg div div{
     }
 
     div.conne-sd-large-ticket-bg {
-        top: 225px !important;
-        left: -50px !important;
+        top: 300px !important;
+        left: 50px !important;
     }
 }
 @media (min-width: 1200px) {
@@ -247,8 +256,8 @@ div.conne-sd-large-ticket-bg div div{
     }
 
     div.conne-sd-large-ticket-bg {
-        top: 175px !important;
-        left: -50px !important;
+        top: 200px !important;
+        left: 50px !important;
     }
 }
 @media (min-width: 1400px) {
@@ -261,7 +270,7 @@ div.conne-sd-large-ticket-bg div div{
     }
 
     div.conne-sd-large-ticket-bg {
-        top: 200px !important;
-        left: 0px !important;
+        top: 225px !important;
+        left: 125px !important;
     }
 }

@@ -100,6 +100,45 @@ div.conne-sd-ribbon-bottom-bg div div{
     background-repeat: no-repeat;
 }
 
+div.conne-sd-ribbon-top-row {
+    position: absolute;
+    width: 100%;
+    z-index: -1999;
+    top: -250px;
+    right: 0;
+    /* left: 625px; */
+}
+
+div.conne-sd-ribbon-top-col {
+    position: relative;
+}
+
+div.conne-sd-ribbon-top-col img {
+    width: 80%;
+    visibility: hidden;
+}
+
+div.conne-sd-ribbon-top-col div.conne-sd-ribbon-top-bg {
+    height: 100%;
+    position: absolute;
+    z-index: -1000;
+    top: 100px;
+    padding: 0;
+    /* top: 120px;
+    right: 215px; */
+}
+
+div.conne-sd-ribbon-top-bg div{
+    height: 100%;
+}
+
+div.conne-sd-ribbon-top-bg div div{
+    background-image: url('../img/ribbon_top_1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 @media (max-width: 576px) {
     div.conne-sd-quote-bg {
         top: 80px !important;
@@ -116,24 +155,45 @@ div.conne-sd-ribbon-bottom-bg div div{
     div.conne-sd-ribbon-bottom-bg {
         visibility: hidden;
     }
+
+    div.conne-sd-ribbon-top-bg {
+        visibility: hidden;
+    }
 }
 @media (min-width: 768px) {
     div.conne-sd-ribbon-bottom-bg {
         top: -30px !important;
+    }
+
+    div.conne-sd-ribbon-top-bg {
+        top: 350px !important;
+        left: -5px !important;
     }
 }
 @media (min-width: 992px) {
     div.conne-sd-ribbon-bottom-bg {
         top: 75px !important;
     }
+
+    div.conne-sd-ribbon-top-bg {
+        top: 400px !important;
+    }
 }
 @media (min-width: 1200px) {
     div.conne-sd-ribbon-bottom-bg {
         top: -45px !important;
     }
+    div.conne-sd-ribbon-top-bg {
+        top: 100px !important;
+        left: 0px !important;
+    }
 }
 @media (min-width: 1400px) {
     div.conne-sd-ribbon-bottom-bg {
         top: 4px !important;
+    }
+    div.conne-sd-ribbon-top-bg {
+        top: 50px !important;
+        left: 5px !important;
     }
 }

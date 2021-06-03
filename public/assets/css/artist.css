@@ -11,7 +11,8 @@ div.conne-sd-col div.conne-sd-bg {
     height: 100%;
     position: absolute;
     z-index: -999;
-    top: 80px
+    top: 90px;
+    width: 90%;
 }
 
 div.conne-sd-col div.conne-sd-bg div{

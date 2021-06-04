@@ -14,6 +14,47 @@ body {
     /* background-size: contain, contain; */
 }
 
+div.block1 {
+    background-image: url('../img/block_1.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+div.block1 img {
+    visibility: hidden;
+    width: 100%;
+    height: fit-content;
+}
+
+div.block1-container {
+    position: relative;
+}
+
+div.block1-container div.block1-body-container {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+}
+
+div.block1-container div.block1-body-container .gap-row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.block1-title {
+    height: 150px;
+}
+
+div.block1-title div {
+    font-size: 42px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #333333;
+}
+
 div.block2 {
     background-image: url('../img/block_2.png');
     background-repeat: no-repeat;

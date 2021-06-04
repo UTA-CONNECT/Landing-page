@@ -1,3 +1,10 @@
+div.conne-sd-row {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    top: -350px;
+}
+
 div.conne-sd-col {
     position: relative;
 }

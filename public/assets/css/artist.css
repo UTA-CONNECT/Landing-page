@@ -1,8 +1,8 @@
 div.conne-sd-row {
-    position: relative;
+    position: absolute;
     width: 100%;
-    z-index: 999;
-    top: -350px;
+    z-index: 2999;
+    top: -400px;
 }
 
 div.conne-sd-col {
@@ -37,8 +37,9 @@ div.conne-sd-col div.conne-sd-bg div div{
 div.conne-sd-quote-row {
     position: absolute;
     width: 100%;
-    z-index: 999;
-    top: -250px;
+    z-index: 2999;
+    top: -350px;
+    right: 30px
 }
 
 div.conne-sd-quote-col {
@@ -74,8 +75,8 @@ div.conne-sd-ribbon-bottom-row {
     position: absolute;
     width: 100%;
     z-index: 1999;
-    top: 334px;
-    right: 200px;
+    top: -70px;
+    right: 170px;
 }
 
 div.conne-sd-ribbon-bottom-col {
@@ -111,9 +112,8 @@ div.conne-sd-ribbon-top-row {
     position: absolute;
     width: 100%;
     z-index: 1999;
-    top: -650px;
-    left: 150px;
-    right: 0;
+    top: -750px;
+    right: -150px;
     /* left: 625px; */
 }
 
@@ -150,9 +150,9 @@ div.conne-sd-ribbon-top-bg div div{
 div.conne-sd-large-ticket-row {
     position: absolute;
     width: 100%;
-    z-index: 1999;
-    top: -350px;
-    right: 200px;
+    z-index: 999;
+    top: -430px;
+    right: 190px;
 }
 
 div.conne-sd-large-ticket-col {

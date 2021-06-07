@@ -37,7 +37,13 @@ div.block1-container div.block1-body-container {
     top: 0;
 }
 
-div.block1-container div.block1-body-container .gap-row {
+div.block1-container div.block1-text-container {
+    position: absolute;
+    z-index: 20;
+    top: 150px;
+}
+
+div.block1-container div.block1-body-container div.block1-text-container .gap-row {
     width: 80%;
     margin: 0 auto;
 }
@@ -50,6 +56,32 @@ div.block1-title div {
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #333333;
+}
+
+div.block1-sub-title {
+    height: 100px;
+}
+
+div.block1-sub-title div {
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #333333;
+}
+
+div.block1-info-title {
+    height: 30px;
+}
+
+div.block1-info-title div {
+    font-size: 24px;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;

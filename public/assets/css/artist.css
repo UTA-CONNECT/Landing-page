@@ -23,12 +23,12 @@ div.conne-sd-col div.conne-sd-bg {
     animation: cartoonRotate 2s infinite;
 }
 
-div.conne-sd-col div.conne-sd-bg div{
+div.conne-sd-col div.conne-sd-bg div {
     height: 100%;
 }
 
-div.conne-sd-col div.conne-sd-bg div div{
-    background-image: url('../img/conne_chan_sd.png');
+div.conne-sd-col div.conne-sd-bg div div {
+    background-image: url("../img/conne_chan_sd.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ div.conne-sd-quote-row {
     width: 100%;
     z-index: 999;
     top: 300px;
-    right: 50px
+    right: 50px;
 }
 
 div.conne-sd-quote-col {
@@ -60,12 +60,12 @@ div.conne-sd-quote-col div.conne-sd-quote-bg {
     animation: cartoonRotateFlip 2s infinite;
 }
 
-div.conne-sd-quote-col div.conne-sd-quote-bg div{
+div.conne-sd-quote-col div.conne-sd-quote-bg div {
     height: 100%;
 }
 
-div.conne-sd-quote-col div.conne-sd-quote-bg div div{
-    background-image: url('../img/quote.png');
+div.conne-sd-quote-col div.conne-sd-quote-bg div div {
+    background-image: url("../img/quote.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -97,12 +97,12 @@ div.conne-sd-ribbon-bottom-col div.conne-sd-ribbon-bottom-bg {
     right: 215px; */
 }
 
-div.conne-sd-ribbon-bottom-bg div{
+div.conne-sd-ribbon-bottom-bg div {
     height: 100%;
 }
 
-div.conne-sd-ribbon-bottom-bg div div{
-    background-image: url('../img/ribbon_top_2.png');
+div.conne-sd-ribbon-bottom-bg div div {
+    background-image: url("../img/ribbon_top_2.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -136,12 +136,12 @@ div.conne-sd-ribbon-top-col div.conne-sd-ribbon-top-bg {
     right: 215px; */
 }
 
-div.conne-sd-ribbon-top-bg div{
+div.conne-sd-ribbon-top-bg div {
     height: 100%;
 }
 
-div.conne-sd-ribbon-top-bg div div{
-    background-image: url('../img/ribbon_top_1.png');
+div.conne-sd-ribbon-top-bg div div {
+    background-image: url("../img/ribbon_top_1.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -175,12 +175,12 @@ div.conne-sd-large-ticket-col div.conne-sd-large-ticket-bg {
     right: 215px; */
 }
 
-div.conne-sd-large-ticket-bg div{
+div.conne-sd-large-ticket-bg div {
     height: 100%;
 }
 
-div.conne-sd-large-ticket-bg div div{
-    background-image: url('../img/ticket_large.png');
+div.conne-sd-large-ticket-bg div div {
+    background-image: url("../img/ticket_large.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@ div.conne-sd-large-ticket-bg div div{
         left: -25px !important;
         padding: 0;
     }
-    div.conne-sd-large-ticket-col img{
+    div.conne-sd-large-ticket-col img {
         /* width: 80%; */
         /* display: none; */
     }
@@ -260,7 +260,7 @@ div.conne-sd-large-ticket-bg div div{
     }
     div.conne-sd-ribbon-top-bg {
         top: 100px !important;
-        left: 0px !important;
+        left: 0 !important;
     }
 
     div.conne-sd-large-ticket-bg {

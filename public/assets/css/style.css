@@ -1,24 +1,27 @@
 
-html, body {
-  width: 100%;
-  height: 100vh; /* 100% of the viewport height */
-  margin: 0;
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    /* 100% of the viewport height */
+    margin: 0;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-image: url('../img/patterns.png'), url('../img/stars.png'), url(../img/dot_circles.png); /* multi background image*/
+    background-image: url('../img/patterns.png'), url('../img/stars.png'), url("../img/dot_circles.png");
+    /* multi background image*/
     background-repeat: repeat, repeat, repeat;
     background-position: center, center, top;
     /* background-size: contain, contain; */
 }
 
 div.block1 {
-    background-image: url('../img/block_1.png');
+    background-image: url("../img/block_1.png");
     background-repeat: no-repeat;
     background-position-x: center;
-    padding-bottom: 100px;  
+    padding-bottom: 100px;
 }
 
 div.block1 img {
@@ -79,7 +82,7 @@ div.block1-sub-title div {
 }
 
 div.block1-info-title {
-    height: 30px;
+    height: 150px;
 }
 
 div.block1-info-title div {
@@ -89,12 +92,13 @@ div.block1-info-title div {
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    text-align: left;
+    text-align: cen;
     color: #333333;
+    white-space: pre-line;
 }
 
 div.block2 {
-    background-image: url('../img/block_2.png');
+    background-image: url("../img/block_2.png");
     background-repeat: no-repeat;
     background-position-x: center;
 }
@@ -164,13 +168,13 @@ div.title-ribbon {
     animation: upDown 1.5s alternate infinite ease-in-out;
 }
 
-div.title-ribbon img{
+div.title-ribbon img {
     width: 100%;
 }
 
 @media (max-width: 768px) {
 
-    div.title-ribbon img{
+    div.title-ribbon img {
         width: 100vw;
     }
 
@@ -196,7 +200,7 @@ div.conne-top-container-back {
     margin-top: 37px;
     top: 37px;
     /* padding: 0; */
-    background-image: url('../img/conne_chan_solid.png');
+    background-image: url("../img/conne_chan_solid.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -209,10 +213,10 @@ div.conne-top-container-small-back {
     position: absolute;
     z-index: -1;
     /* position: absolute; */
-    margin-top: 0px;
+    margin-top: 0;
     top: 37px;
     /* padding: 0; */
-    background-image: url('../img/conne_chan_solid.png');
+    background-image: url("../img/conne_chan_solid.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -220,12 +224,12 @@ div.conne-top-container-small-back {
     animation: upDown 1.5s alternate infinite ease-in-out;
 }
 
-div.conne-top-container { 
+div.conne-top-container {
     /* position: absolute; */
     margin-top: 37px;
     top: 37px;
     /* padding: 0; */
-    background-image: url('../img/conne_chan.png');
+    background-image: url("../img/conne_chan.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -233,12 +237,12 @@ div.conne-top-container {
     animation: upDown 1.5s alternate infinite ease-in-out;
 }
 
-div.conne-top-container-small { 
+div.conne-top-container-small {
     /* position: absolute; */
-    margin-top: 0px;
+    margin-top: 0;
     top: 37px;
     /* padding: 0; */
-    background-image: url('../img/conne_chan.png');
+    background-image: url("../img/conne_chan.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -75,7 +75,7 @@ div.conne-sd-ribbon-bottom-row {
     position: absolute;
     width: 100%;
     z-index: 1999;
-    /* top: -70px; */
+    top: 580px;
     right: 170px;
 }
 
@@ -111,7 +111,7 @@ div.conne-sd-ribbon-bottom-bg div div {
 div.conne-sd-ribbon-top-row {
     position: absolute;
     width: 100%;
-    z-index: 1999;
+    z-index: 99;
     top: -100px;
     right: -150px;
     /* left: 625px; */
@@ -227,11 +227,11 @@ div.conne-sd-large-ticket-bg div div {
 }
 @media (min-width: 768px) {
     div.conne-sd-ribbon-bottom-bg {
-        top: -30px !important;
+        top: -130px !important;
     }
 
     div.conne-sd-ribbon-top-bg {
-        top: 350px !important;
+        top: -80px !important;
         left: -5px !important;
     }
 
@@ -242,15 +242,15 @@ div.conne-sd-large-ticket-bg div div {
 }
 @media (min-width: 992px) {
     div.conne-sd-ribbon-bottom-bg {
-        top: 75px !important;
+        top: -75px !important;
     }
 
     div.conne-sd-ribbon-top-bg {
-        top: 400px !important;
+        top: -10px !important;
     }
 
     div.conne-sd-large-ticket-bg {
-        top: 300px !important;
+        top: 250px !important;
         left: 50px !important;
     }
 }

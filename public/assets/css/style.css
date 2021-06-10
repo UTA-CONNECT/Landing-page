@@ -18,7 +18,7 @@ body {
 }
 
 div.block1 {
-    background-image: url("../img/block_1.png");
+    /* background-image: url("../img/block_1.png"); */
     background-repeat: no-repeat;
     background-position-x: center;
     padding-bottom: 100px;

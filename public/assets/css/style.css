@@ -180,11 +180,37 @@ div.title-ribbon img {
 
     div.block2-container div.block2-body-container .gap-row {
         width: 100%;
+        top: -150px;
         margin: 0 auto;
     }
 
+    div.block1-title div {
+        font-size: 25px;
+        line-height: 1;
+    }
+
     div.block2-title div {
-        font-size: 36px;
+        font-size: 25px;
+        line-height: 1;
+    }
+    
+    div.block1-sub-title div {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    div.block2-sub-title div {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    div.block1-info-title div {
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    div.block2-info-title div {
+        font-size: 18px;
         line-height: 1;
     }
 }

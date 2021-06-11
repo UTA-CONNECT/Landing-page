@@ -98,7 +98,7 @@ div.block1-info-title div {
 }
 
 div.block2 {
-    background-image: url("../img/block_2.png");
+    /* background-image: url("../img/block_2.png"); */
     background-repeat: no-repeat;
     background-position-x: center;
 }

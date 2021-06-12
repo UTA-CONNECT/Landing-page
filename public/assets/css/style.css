@@ -17,6 +17,11 @@ body {
     /* background-size: contain, contain; */
 }
 
+div.meet {
+    transform: rotate(-7deg);
+    padding-left: 5px;
+}
+
 div.block1 {
     /* background-image: url("../img/block_1.png"); */
     background-repeat: no-repeat;
@@ -27,7 +32,7 @@ div.block1 {
 div.block1 img {
     visibility: hidden;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 div.block1-container {
@@ -52,7 +57,7 @@ div.block1-container div.block1-body-container div.block1-text-container .gap-ro
 }
 
 div.block1-title {
-    height: 150px;
+    height: 160px;
 }
 
 div.block1-title div {
@@ -106,7 +111,7 @@ div.block2 {
 div.block2 img {
     visibility: hidden;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 div.block2-container {
@@ -125,7 +130,7 @@ div.block2-container div.block2-body-container .gap-row {
 }
 
 div.block2-title {
-    height: 150px;
+    height: 180px;
 }
 
 div.block2-title div {
@@ -172,7 +177,71 @@ div.title-ribbon img {
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+
+    div.block1-title div {
+        font-size: 25px;
+        line-height: 1;
+        height: 130px;
+    }
+
+    div.block2-title div {
+        font-size: 25px;
+        line-height: 1;
+        height: 150px;
+    }
+
+    div.block1-sub-title div {
+        font-size: 12px;
+        line-height: 1;
+        height: 320px;
+    }
+
+    div.block1-info-title div {
+        font-size: 11px;
+        line-height: 1;
+        height: 520px;
+    }
+
+    div.meet {
+        transform: rotate(-7deg);
+        padding-left: 20px;
+    }
+}
+
+@media (min-width:500px) and (max-width: 576px) {
+
+    div.block1-title div {
+        font-size: 25px;
+        line-height: 1;
+        height: 120px;
+    }
+
+    div.block2-title div {
+        font-size: 25px;
+        line-height: 1;
+        height: 150px;
+    }
+
+    div.block1-sub-title div {
+        font-size: 15px;
+        line-height: 1;
+        height: 280px;
+    }
+
+    div.block1-info-title div {
+        font-size: 15px;
+        line-height: 1;
+        height: 470px;
+    }
+
+    div.meet {
+        transform: rotate(-7deg);
+        padding-left: 20px;
+    }
+}
+
+@media (min-width:576px) and (max-width: 768px) {
 
     div.title-ribbon img {
         width: 100vw;
@@ -185,27 +254,67 @@ div.title-ribbon img {
     }
 
     div.block1-title div {
-        font-size: 25px;
+        font-size: 30px;
         line-height: 1;
+        height: 80px;
     }
 
     div.block2-title div {
-        font-size: 25px;
+        font-size: 30px;
         line-height: 1;
+        height: 100px;
     }
 
     div.block1-sub-title div {
-        font-size: 20px;
-        height: 0;
+        font-size: 22px;
         line-height: 1;
+        height: 200px;
     }
 
     div.block1-info-title div {
-        font-size: 15px;
-        height: 120px;
+        font-size: 18px;
         line-height: 1;
+        height: 350px;
+    }
+
+    div.meet {
+        transform: rotate(-7deg);
+        padding-left: 15px;
     }
 }
+
+@media (min-width:768px) and (max-width: 992px) {
+
+    div.block1-title div {
+        font-size: 40px;
+        line-height: 1;
+        height: 80px;
+    }
+
+    div.block2-title div {
+        font-size: 40px;
+        line-height: 1;
+        height: 100px;
+    }
+
+    div.block1-sub-title div {
+        font-size: 25px;
+        line-height: 1;
+        height: 150px;
+    }
+
+    div.block1-info-title div {
+        font-size: 20px;
+        line-height: 1;
+        height: 250px;
+    }
+
+    div.meet {
+        transform: rotate(-7deg);
+        padding-left: 15px;
+    }
+}
+
 div.title-ribbon div {
     padding: 0;
 }

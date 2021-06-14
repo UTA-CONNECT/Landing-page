@@ -9,9 +9,9 @@
 
 @media (max-width: 576px) {
     .ticketing-info {
-        background-position-x: 54%;
-        /* background-image: url('../img/ticketing-container.png'); */
-        height: 150px;
+        background-position-x: center;
+        background-image: url('../img/ticketing-container.png');
+        height: 175px;
     }
 }
 @media (min-width: 576px) {

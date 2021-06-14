@@ -2,7 +2,6 @@ div.conne-sd-row {
     position: absolute;
     width: 100%;
     z-index: -99;
-    top: 250px;
 }
 
 div.conne-sd-col {
@@ -18,7 +17,8 @@ div.conne-sd-col div.conne-sd-bg {
     height: 100%;
     position: absolute;
     z-index: -999;
-    top: 90px;
+    /* top: -200px;
+    right: -10px; */
     width: 90%;
     animation: cartoonRotate 2s infinite;
 }
@@ -38,8 +38,6 @@ div.conne-sd-quote-row {
     position: absolute;
     width: 100%;
     z-index: 999;
-    top: 300px;
-    right: 50px;
 }
 
 div.conne-sd-quote-col {
@@ -55,8 +53,8 @@ div.conne-sd-quote-col div.conne-sd-quote-bg {
     height: 100%;
     position: absolute;
     z-index: -999;
-    top: 120px;
-    right: 215px;
+    /* top: -90px;
+    right: 190px; */
     animation: cartoonRotateFlip 2s infinite;
 }
 
@@ -151,8 +149,6 @@ div.conne-sd-large-ticket-row {
     position: absolute;
     width: 100%;
     z-index: 999;
-    top: 180px;
-    right: 150px;
 }
 
 div.conne-sd-large-ticket-col {
@@ -168,8 +164,6 @@ div.conne-sd-large-ticket-col div.conne-sd-large-ticket-bg {
     height: 100%;
     position: absolute;
     z-index: -1000;
-    top: 250px;
-    left: -50px;
     padding: 0;
     /* top: 120px;
     right: 215px; */
@@ -198,7 +192,6 @@ div.conne-sd-large-ticket-bg div div {
 }
 
 @media (max-width: 767px) {
-
     div.conne-sd-ribbon-bottom-bg {
         visibility: hidden;
     }
@@ -235,6 +228,12 @@ div.conne-sd-large-ticket-bg div div {
         left: -5px !important;
     }
 
+    div.conne-sd-bg {
+        
+    }
+    div.conne-sd-quote-bg {
+
+    }
     div.conne-sd-large-ticket-bg {
         top: 205px !important;
         left: -25px !important;
@@ -249,6 +248,12 @@ div.conne-sd-large-ticket-bg div div {
         top: -10px !important;
     }
 
+    div.conne-sd-bg {
+
+    }
+    div.conne-sd-quote-bg {
+
+    }
     div.conne-sd-large-ticket-bg {
         top: 250px !important;
         left: 50px !important;
@@ -263,9 +268,16 @@ div.conne-sd-large-ticket-bg div div {
         left: 0 !important;
     }
 
+    div.conne-sd-bg {
+        top: -160px !important;
+    }
+    div.conne-sd-quote-bg {
+        top: -80px !important;
+        right: 195px !important;
+    }
     div.conne-sd-large-ticket-bg {
-        top: 200px !important;
-        left: 50px !important;
+        top: -100px !important;
+        left: -115px !important;
     }
 }
 @media (min-width: 1400px) {
@@ -277,8 +289,15 @@ div.conne-sd-large-ticket-bg div div {
         left: 5px !important;
     }
 
+    div.conne-sd-bg {
+        top: -210px !important;
+    }
+    div.conne-sd-quote-bg {
+        top: -100px !important;
+        right: 225px !important;
+    }
     div.conne-sd-large-ticket-bg {
-        top: 225px !important;
-        left: 125px !important;
+        top: -110px !important;
+        left: -50px !important;
     }
 }

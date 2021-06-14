@@ -244,7 +244,7 @@ div.title-ribbon img {
 @media (min-width:576px) and (max-width: 768px) {
 
     div.title-ribbon img {
-        width: 100vw;
+        width: 100%;
     }
 
     div.block2-container div.block2-body-container .gap-row {

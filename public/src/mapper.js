@@ -3,29 +3,34 @@ canvas.width = 3719;
 canvas.height = 513;
 
 const ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = true;
 
-const ticketInfoImg = new Image();
-ticketInfoImg.onload = () => {
+function imgLoader(url) {
+    return new Promise((resolve, reject) => {
+        let img = new Image();
+        img.onload = () => {
+            resolve(img);
+        }
+        img.src = url;
+    })
+}
+
+Promise.all([
+    imgLoader('./assets/img/ticketing-container.png'), 
+    imgLoader('./assets/img/gears.png'), 
+    imgLoader('./assets/img/conne_chan_sparkle_eyes.png')
+])
+.then(results => {
+    const [ticketInfoImg, gearsImg, conneSparkleImg] = results;
     ctx.drawImage(ticketInfoImg, 0, 0);
-}
+    ctx.drawImage(gearsImg, 1070, 115);
+    ctx.drawImage(conneSparkleImg, 2290, 90);
+    // console.log(results);
+})
 
-ticketInfoImg.src = './assets/img/ticketing-container.png'
-
-const gearsImg = new Image();
-gearsImg.onload = () => {
-    ctx.drawImage(gearsImg, 0, 0);
-}
-
-gearsImg.src = './assets/img/gears.png';
-
-const conneSparkleImg = new Image();
-
-conneSparkleImg.onload = () => {
-    ctx.drawImage(conneSparkleImg, 0, 0);
-}
-
-conneSparkleImg.src = './assets/img/conne_chan_sparkle_eyes.png'
-
+window.addEventListener('mousedown', (e) => {
+    console.log(`X: ${e.clientX}, Y: ${e.clientY}`);
+})
 
 function download() {
     const dataURL = canvas.toDataURL();

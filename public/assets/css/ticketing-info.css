@@ -3,4 +3,43 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 513px;
+}
+
+
+@media (max-width: 576px) {
+    .ticketing-info {
+        background-position-x: 54%;
+        /* background-image: url('../img/ticketing-container.png'); */
+        height: 150px;
+    }
+}
+@media (min-width: 576px) {
+    .ticketing-info {
+        background-position-x: center;
+        height: 213px;
+    }
+}
+@media (min-width: 768px) {
+    .ticketing-info {
+        background-position-x: 53%;
+        height: 313px;
+    }
+}
+@media (min-width: 992px) {
+    .ticketing-info {
+        background-position-x: center;
+        height: 313px;
+    }
+}
+@media (min-width: 1200px) {
+    .ticketing-info {
+        background-position-x: 55%;
+        height: 513px;
+    }
+}
+@media (min-width: 1400px) {
+    .ticketing-info {
+        background-position: center;
+    }
 }

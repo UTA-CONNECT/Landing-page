@@ -178,7 +178,6 @@ div.title-ribbon img {
 }
 
 @media (max-width: 500px) {
-
     div.block1-title div {
         font-size: 25px;
         line-height: 1;
@@ -196,7 +195,6 @@ div.title-ribbon img {
         line-height: 1;
         height: 320px;
     }
-
     div.block1-info-title div {
         font-size: 11px;
         line-height: 1;
@@ -210,7 +208,6 @@ div.title-ribbon img {
 }
 
 @media (min-width:500px) and (max-width: 576px) {
-
     div.block1-title div {
         font-size: 25px;
         line-height: 1;
@@ -228,7 +225,6 @@ div.title-ribbon img {
         line-height: 1;
         height: 280px;
     }
-
     div.block1-info-title div {
         font-size: 15px;
         line-height: 1;
@@ -242,7 +238,6 @@ div.title-ribbon img {
 }
 
 @media (min-width:576px) and (max-width: 768px) {
-
     div.title-ribbon img {
         width: 100vw;
     }
@@ -266,15 +261,14 @@ div.title-ribbon img {
     }
 
     div.block1-sub-title div {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1;
-        height: 200px;
+        height: 230px;
     }
-
     div.block1-info-title div {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 1;
-        height: 350px;
+        height: 400px;
     }
 
     div.meet {
@@ -284,7 +278,6 @@ div.title-ribbon img {
 }
 
 @media (min-width:768px) and (max-width: 992px) {
-
     div.block1-title div {
         font-size: 40px;
         line-height: 1;
@@ -302,7 +295,6 @@ div.title-ribbon img {
         line-height: 1;
         height: 150px;
     }
-
     div.block1-info-title div {
         font-size: 20px;
         line-height: 1;

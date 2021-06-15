@@ -1,45 +1,47 @@
 .ticketing-info {
-    background-image: url('../img/ticketing-container-mapped.png');
+    /* background-image: url('../img/ticketing-container-mapped.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     height: 513px;
+    padding: 0 !important;
 }
 
 
 @media (max-width: 576px) {
     .ticketing-info {
-        background-position-x: center;
-        background-image: url('../img/ticketing-container.png');
+        /* background-position-x: center;
+        background-image: url('../img/ticketing-container.png'); */
         height: 175px;
     }
 }
 @media (min-width: 576px) {
     .ticketing-info {
-        background-position-x: center;
-        height: 213px;
+        /* background-position-x: center; */
+        height: 243px;
     }
 }
 @media (min-width: 768px) {
     .ticketing-info {
-        background-position-x: 53%;
-        height: 313px;
+        /* background-position-x: 53%; */
+        height: 363px;
     }
 }
 @media (min-width: 992px) {
     .ticketing-info {
-        background-position-x: center;
-        height: 313px;
+        /* background-position-x: center; */
+        height: 413px;
     }
 }
 @media (min-width: 1200px) {
     .ticketing-info {
-        background-position-x: 55%;
+        /* background-position-x: 55%; */
         height: 513px;
     }
 }
 @media (min-width: 1400px) {
     .ticketing-info {
-        background-position: center;
+        /* background-position: center; */
+        height: 613px;
     }
 }

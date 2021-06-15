@@ -18,19 +18,19 @@
 @media (min-width: 576px) {
     .ticketing-info {
         /* background-position-x: center; */
-        height: 213px;
+        height: 243px;
     }
 }
 @media (min-width: 768px) {
     .ticketing-info {
         /* background-position-x: 53%; */
-        height: 313px;
+        height: 363px;
     }
 }
 @media (min-width: 992px) {
     .ticketing-info {
         /* background-position-x: center; */
-        height: 313px;
+        height: 413px;
     }
 }
 @media (min-width: 1200px) {
@@ -42,5 +42,6 @@
 @media (min-width: 1400px) {
     .ticketing-info {
         /* background-position: center; */
+        height: 613px;
     }
 }

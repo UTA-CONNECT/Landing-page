@@ -32,26 +32,6 @@ function imgLoader(url) {
     })
 }
 
-// y = ax, what is a ?
-function getLinearFuncAlpha(deg) {
-    const theta = -1 * deg * Math.PI / 180;
-    // (1, y), what is y?
-    const y = Math.sin(theta);
-    const x = Math.cos(theta);
-    //          (y - 0)
-    //  alpha = -------
-    //          (x - 0)
-    const alpha = (y - 0) / (x - 0);
-    // console.log(theta, x, y, alpha);
-    return alpha === Infinity ? 0 : alpha;
-}
-
-// calc y = ax + beta
-function minMaxY(deg, minX, maxX, beta) {
-    // console.log(minX, maxX);
-    return [getLinearFuncAlpha(deg) * minX + (beta || 0), getLinearFuncAlpha(deg) * maxX - (beta || 0)]
-}
-
 class TicketImg {
     constructor(x, y, img) {
         this.x = x;
@@ -79,15 +59,15 @@ class TicketImg {
     // calc y = ax + beta
     minMaxY(deg, minX, maxX, beta) {
         // console.log(minX, maxX);
-        return [getLinearFuncAlpha(deg) * minX + (beta || 0), getLinearFuncAlpha(deg) * maxX - (beta || 0)]
+        return [this.getLinearFuncAlpha(deg) * minX + (beta || 0), this.getLinearFuncAlpha(deg) * maxX - (beta || 0)]
     }
 
     update(degree, rect) {
-        const [leftY, rightY] = minMaxY(degree, -rect.width / 2, rect.width / 2, 0);
+        const [leftY, rightY] = this.minMaxY(degree, -rect.width / 2, rect.width / 2, 0);
         console.log(`[leftY, rightY] ${[leftY - this.img.height / 2, rightY + this.img.height / 2]}`);
         const rotatedImgHeight = this.originImg.height + Math.abs(leftY) + Math.abs(rightY) + this.threshold;
         this.scale = rect.height / rotatedImgHeight;
-        console.log(getLinearFuncAlpha(degree), this.scale, rotatedImgHeight, this.originImg.height, 'w', -rect.width / 2, rect.width / 2);
+        console.log(this.getLinearFuncAlpha(degree), this.scale, rotatedImgHeight, this.originImg.height, 'w', -rect.width / 2, rect.width / 2);
     }
 
     draw(degree, rect) {
@@ -106,7 +86,7 @@ class TicketImg {
             ctx.fillStyle = 'rgba(155, 155, 155, 0.5)'
             ctx.fillRect(renderX + this.img.width * this.scale / 2 - 10 + this.x * pixelRatio, renderY + this.img.height * this.scale / 2 - 10 + this.y * pixelRatio, 20, 20)
         }
-        console.log(minMaxY(degree, -rect.width / 2, rect.width / 2, 0), getLinearFuncAlpha(degree));
+        console.log(this.minMaxY(degree, -rect.width / 2, rect.width / 2, 0), this.getLinearFuncAlpha(degree));
 
 
         ctx.translate(0, 0);

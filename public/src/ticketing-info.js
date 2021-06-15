@@ -99,12 +99,12 @@ class TicketImg {
         ctx.translate(rect.width / 2, rect.height / 2);
         ctx.rotate(degree * Math.PI / 180);
         // ctx.drawImage(this.img, (-rect.width) * this.scale, (-rect.height / 2) * this.scale, this.img.width * this.scale, this.img.height * this.scale);
-        ctx.drawImage(this.img, renderX, renderY, this.img.width * this.scale, this.img.height * this.scale);
+        ctx.drawImage(this.img, renderX + this.x * pixelRatio, renderY + this.y, this.img.width * this.scale, this.img.height * this.scale);
         if(DEBUG_MODE) {
             ctx.fillStyle = 'rgba(155, 0, 0, 0.5)';
-            ctx.fillRect(renderX, renderY, this.img.width * this.scale, this.img.height * this.scale);
+            ctx.fillRect(renderX + this.x * pixelRatio, renderY + this.y * pixelRatio, this.img.width * this.scale, this.img.height * this.scale);
             ctx.fillStyle = 'rgba(155, 155, 155, 0.5)'
-            ctx.fillRect(renderX + this.img.width * this.scale / 2 - 10 + this.x, renderY + this.img.height * this.scale / 2 - 10 + this.y, 20, 20)
+            ctx.fillRect(renderX + this.img.width * this.scale / 2 - 10 + this.x * pixelRatio, renderY + this.img.height * this.scale / 2 - 10 + this.y * pixelRatio, 20, 20)
         }
         console.log(minMaxY(degree, -rect.width / 2, rect.width / 2, 0), getLinearFuncAlpha(degree));
 
@@ -132,9 +132,29 @@ Promise.all([
     render();
 })
 
+function responsivePosition(width) {
+    console.log('w', width, 1400 <= width);
+    if (0 <= width && width < 576) {
+        return [-25, 0];
+    } else if (576 <= width && width < 768) {
+        return [0, 0];
+    } else if (768 <= width && width < 992) {
+        return [-35, 0];
+    } else if (992 <= width && width < 1200) {
+        return [0, 0];
+    } else if (1200 <= width && width < 1400) {
+        return [0, 0];
+    } else if (1400 <= width) {
+        return [0, 0];
+    }
+}
+
 function render() {
     ctx.clearRect(0, 0, canvasBoundingRect.width, canvasBoundingRect.height);
+    const [x, y] = responsivePosition(ticketingCanvas.getBoundingClientRect().width);
     if (ticketMapped) {
+        ticketMapped.x = x;
+        ticketMapped.y = y;
         ticketMapped.update(angle, canvasBoundingRect);
         ticketMapped.draw(angle, canvasBoundingRect);  
     }

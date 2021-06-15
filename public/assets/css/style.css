@@ -390,6 +390,18 @@ div.date-place-info-small {
     /* padding: 20px; */
 }
 
+div.coalition {
+    /* font-family: GmarketSans; */
+    font-size: 42px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
+
 img.title {
     margin-top: 300px;
     width: 100%;

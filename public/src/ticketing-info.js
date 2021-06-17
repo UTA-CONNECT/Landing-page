@@ -5,7 +5,7 @@ ctx.imageSmoothingEnabled = true;
 const pixelRatio = window.devicePixelRatio;
 console.log(`pixelRatio: ${pixelRatio}`);
 
-const DEBUG_MODE = false;
+const DEBUG_MODE = true;
 const angle = -3;
 let canvasBoundingRect = ticketingCanvas.getBoundingClientRect();
 
@@ -29,6 +29,16 @@ function imgLoader(url) {
             resolve(img);
         }
         img.src = url;
+    })
+}
+
+function fontLoader(fontName, url) {
+    return new Promise((resolve) => {
+        let f = new FontFace(fontName, `url(${url})`);
+        f.load().then((font) => {
+            document.fonts.add(font);
+            resolve();
+        })
     })
 }
 
@@ -94,6 +104,27 @@ class TicketImg {
     }
 }
 
+class TicketText {
+    constructor(x, y, text, font, size, colorCode) {
+        this.x = x;
+        this.y = y;
+        this.text = text;
+        this.font = font;
+        this.size = size;
+        this.colorCode = colorCode;
+    }
+
+    draw() {
+        ctx.font = `${this.size}px ${this.font}`;
+        ctx.fillStyle = this.colorCode;
+        ctx.fillText(this.text, this.x * pixelRatio, this.y * pixelRatio);
+        if(DEBUG_MODE) {
+            ctx.fillStyle = 'rgba(0, 0, 155, 0.5)';
+            ctx.fillRect(this.x * pixelRatio, this.y * pixelRatio - this.size, ctx.measureText(this.text).width, this.size);
+        }
+    }
+}
+
 window.addEventListener('resize', (e) => {
     setCanvasBlockSize();
     render();
@@ -101,15 +132,26 @@ window.addEventListener('resize', (e) => {
 setCanvasBlockSize();
 
 let ticketMapped = undefined;
+let text1 = undefined;
 
 Promise.all([
     imgLoader('./assets/img/ticketing-container.png'), 
     imgLoader('./assets/img/ticketing-container-mapped.png'), 
+    fontLoader('GmarketSansBold', './assets/fonts/GmarketSansOTF/GmarketSansBold.otf'),
+    fontLoader('GmarketSansLight', './assets/fonts/GmarketSansOTF/GmarketSansLight.otf'),
+    fontLoader('GmarketSansMedium', './assets/fonts/GmarketSansOTF/GmarketSansMedium.otf')
 ])
 .then(imgList => {
     const [ticketingContainer, ticketingContainerMapped] = imgList;
     ticketMapped = new TicketImg(0, 0, ticketingContainerMapped); 
+    return true;
+})
+.then(() => {
+    text1 = new TicketText(0, 0, '사전예매 - 33,000₩', 'GmarketSansBold', '42', '#333333');
     render();
+})
+.catch(err => {
+    console.log('err', err);
 })
 
 function responsivePosition(width) {
@@ -137,5 +179,10 @@ function render() {
         ticketMapped.y = y;
         ticketMapped.update(angle, canvasBoundingRect);
         ticketMapped.draw(angle, canvasBoundingRect);  
+    }
+    if (text1) {
+        text1.x = x;
+        text1.y = y;
+        text1.draw(angle, canvasBoundingRect);
     }
 }

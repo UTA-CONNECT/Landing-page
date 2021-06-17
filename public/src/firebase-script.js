@@ -27,6 +27,18 @@ document.getElementById('auth').addEventListener('touchend', (e) => {
     }
 })
 
+function setMyInfo({uid, displayName, email, emailVerified, photoURL} = userData) {
+    console.log(`[firebase-script] [setMyInfo] user data`, {uid, displayName, email, emailVerified, photoURL})
+    const db = firebase.firestore();
+    db.collection("users").doc(uid).set({uid, displayName, email, emailVerified, photoURL})
+    .then(() => {
+        console.log("Document successfully written!");
+    })
+    .catch((error) => {
+        console.error("Error writing document: ", error);
+    });
+}
+
 function signOut() {
     firebase.auth().signOut().then(() => {
         // Sign-out successful.
@@ -51,6 +63,7 @@ function signIn() {
             var user = result.user;
             // ...
             console.log('result', result);
+            setMyInfo(user);
         }).catch((error) => {
             // Handle Errors here.
             var errorCode = error.code;

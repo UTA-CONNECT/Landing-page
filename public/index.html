@@ -294,11 +294,31 @@
                         <img src="assets/img/block_2.png"/>
                         <div
                             style=" position: absolute; width: 100%; background-image: url(assets/img/block_2.png); background-repeat: no-repeat; background-size: contain; background-position: center; height: 100%; top: 0;"></div>
-                        <div class="container justify-content-center block2-body-container">
-                            <div class="row gap-row">
+                        <div class="container justify-content-center block2-body-container" style="height: 100%;">
+                            <!-- <div class="row gap-row">
                                 <div
                                     class="col-12 block2-title d-flex align-items-center justify-content-center">
                                     <div>아티스트</div>
+                                </div>
+                            </div> -->
+                            <div class="row" id="artist_title" hidden>
+                                <div class="col-12">
+                                    아티스트
+                                </div>
+                            </div>
+                            <div class="row" id="artist_offset" hidden>
+                                <div class="col-12">
+                                    gap
+                                </div>
+                            </div>
+                            <div class="row" id="artist_box" hidden>
+                                <div class="col-12">
+                                    box
+                                </div>
+                            </div>
+                            <div class="row" id="artist_hr" hidden>
+                                <div class="col-12">
+                                    hr
                                 </div>
                             </div>
                         </div>
@@ -352,5 +372,6 @@
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
             crossorigin="anonymous"></script>
         <script src="src/ticketing-info.js"></script>
+        <script src="src/artist.js"></script>
     </body>
 </html>

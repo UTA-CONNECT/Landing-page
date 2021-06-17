@@ -67,6 +67,12 @@ function init() {
         artistItem.ele = ele;
         artistItem.ele.removeAttribute('hidden');
         document.querySelector('div.block2-body-container').appendChild(ele);
+
+        if (artistItem.type === 'box') {
+            console.log(artistItem.ele);
+            artistItem.ele.querySelector('#name').textContent = artistItem.title;
+            artistItem.ele.querySelector('#desc').textContent = artistItem.desc;
+        }
     })
 }
 

@@ -61,6 +61,7 @@ div.block1-title {
 }
 
 div.block1-title div {
+    font-family: GmarketSans-Bold;
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
@@ -134,6 +135,7 @@ div.block2-title {
 }
 
 div.block2-title div {
+    font-family: GmarketSans-Bold;
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
@@ -141,7 +143,6 @@ div.block2-title div {
     line-height: 1.2;
     letter-spacing: normal;
     color: #333333;
-    font-family: GmarketSans-Bold;
 }
 
 /* div.circle-pattern {
@@ -392,7 +393,7 @@ div.date-place-info-small {
 }
 
 div.coalition {
-    /* font-family: GmarketSans; */
+    font-family: GmarketSans-Bold;
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;

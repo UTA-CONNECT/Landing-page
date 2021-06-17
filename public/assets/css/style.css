@@ -73,11 +73,12 @@ div.block1-title div {
 }
 
 div.block1-sub-title {
-    height: 150px;
+    height: 200px;
 }
 
 div.block1-sub-title div {
-    font-size: 25px;
+    font-family: GmarketSans-Bold;
+    font-size: 30px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -88,10 +89,11 @@ div.block1-sub-title div {
 }
 
 div.block1-info-title {
-    height: 100px;
+    height: 50px;
 }
 
 div.block1-info-title div {
+    /* font-family: KoPubWorldDotum; */
     font-size: 24.4px;
     font-weight: 300;
     font-stretch: normal;
@@ -195,20 +197,19 @@ div.title-ribbon img {
     div.block1-sub-title div {
         font-size: 12px;
         line-height: 1;
-        height: 320px;
+        height: 370px;
     }
     div.block1-info-title div {
         font-size: 11px;
         line-height: 1;
-        height: 520px;
+        height: 580px;
     }
 
     div.meet {
         transform: rotate(-7deg);
-        padding-left: 20px;
+        padding-left: 25px;
     }
 }
-
 @media (min-width:500px) and (max-width: 576px) {
     div.block1-title div {
         font-size: 25px;
@@ -225,20 +226,19 @@ div.title-ribbon img {
     div.block1-sub-title div {
         font-size: 15px;
         line-height: 1;
-        height: 280px;
+        height: 340px;
     }
     div.block1-info-title div {
         font-size: 15px;
         line-height: 1;
-        height: 470px;
+        height: 530px;
     }
 
     div.meet {
         transform: rotate(-7deg);
-        padding-left: 20px;
+        padding-left: 25px;
     }
 }
-
 @media (min-width:576px) and (max-width: 768px) {
     div.title-ribbon img {
         width: 100%;
@@ -253,32 +253,31 @@ div.title-ribbon img {
     div.block1-title div {
         font-size: 30px;
         line-height: 1;
-        height: 80px;
+        height: 100px;
     }
 
     div.block2-title div {
         font-size: 30px;
         line-height: 1;
-        height: 100px;
+        height: 120px;
     }
 
     div.block1-sub-title div {
         font-size: 20px;
         line-height: 1;
-        height: 230px;
+        height: 290px;
     }
     div.block1-info-title div {
         font-size: 15px;
         line-height: 1;
-        height: 400px;
+        height: 470px;
     }
 
     div.meet {
         transform: rotate(-7deg);
-        padding-left: 15px;
+        padding-left: 20px;
     }
 }
-
 @media (min-width:768px) and (max-width: 992px) {
     div.block1-title div {
         font-size: 40px;
@@ -295,17 +294,46 @@ div.title-ribbon img {
     div.block1-sub-title div {
         font-size: 25px;
         line-height: 1;
-        height: 150px;
+        height: 250px;
     }
     div.block1-info-title div {
         font-size: 20px;
         line-height: 1;
-        height: 250px;
+        height: 400px;
     }
 
     div.meet {
         transform: rotate(-7deg);
         padding-left: 15px;
+    }
+}
+@media (min-width:992px) and (max-width: 1200px) {
+    div.block1-title div {
+        font-size: 40px;
+        line-height: 1;
+        height: 50px;
+    }
+
+    div.block2-title div {
+        font-size: 40px;
+        line-height: 1;
+        height: 80px;
+    }
+
+    div.block1-sub-title div {
+        font-size: 30px;
+        line-height: 1;
+        height: 150px;
+    }
+    div.block1-info-title div {
+        font-size: 25px;
+        line-height: 1;
+        height: 280px;
+    }
+
+    div.meet {
+        transform: rotate(-7deg);
+        padding-left: 10px;
     }
 }
 

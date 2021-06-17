@@ -9,6 +9,19 @@ div.artist-title {
     color: #333333;
 }
 
+div.artist-box-row {
+    height: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#artist-divider-img {
+    height: 50%;
+    width: auto;
+    visibility: inherit;
+    max-height: 44px;
+}
+
 div.conne-sd-row {
     position: absolute;
     width: 100%;

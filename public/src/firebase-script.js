@@ -10,6 +10,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 document.getElementById('auth').addEventListener('click', (e) => {
     if (!firebase.auth().currentUser) {

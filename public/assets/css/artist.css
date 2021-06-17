@@ -57,6 +57,21 @@ div.artist-img {
     width: 100%;
     padding-top: 100%;
     background-color: #cccccc;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.artist-img::after {
+    content: '?';
+    position: absolute;
+    font-family: GmarketSans-Bold;
+    color: white;
+    font-size: 70px;
+    /* line-height: 70px; */
+    top: calc(50% - 40px);
 }
 
 h2.artist-title {
@@ -298,6 +313,10 @@ div.conne-sd-large-ticket-bg div div {
     h2.artist-title {
         font-size: 15px;
     }
+    div.artist-img::after {
+        font-size: 10px;
+        top: calc(50% - 6px);
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -351,6 +370,10 @@ div.conne-sd-large-ticket-bg div div {
     h2.artist-title {
         font-size: 20px;
     }
+    div.artist-img::after {
+        font-size: 20px;
+        top: calc(50% - 14px);
+    }
 }
 @media (min-width: 768px) and (max-width: 992px) {
     div.conne-sd-ribbon-bottom-bg {
@@ -395,6 +418,10 @@ div.conne-sd-large-ticket-bg div div {
     h2.artist-title {
         font-size: 28px;
     }
+    div.artist-img::after {
+        font-size: 30px;
+        top: calc(50% - 20px);
+    }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     div.conne-sd-ribbon-bottom-bg {
@@ -435,6 +462,10 @@ div.conne-sd-large-ticket-bg div div {
     h2.artist-title {
         font-size: 36px;
     }
+    div.artist-img::after {
+        font-size: 45px;
+        top: calc(50% - 28px);
+    }
 }
 @media (min-width: 1200px) {
     div.conne-sd-ribbon-bottom-bg {
@@ -466,6 +497,10 @@ div.conne-sd-large-ticket-bg div div {
     h2.artist-title {
         font-size: 40px;
     }
+    div.artist-img::after {
+        font-size: 60px;
+        top: calc(50% - 40px);
+    }
 }
 @media (min-width: 1400px) {
     div.conne-sd-ribbon-bottom-bg {
@@ -495,5 +530,9 @@ div.conne-sd-large-ticket-bg div div {
     }
     h2.artist-title {
         font-size: 42px;
+    }
+    div.artist-img::after {
+        font-size: 70px;
+        top: calc(50% - 48px);
     }
 }

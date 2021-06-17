@@ -22,6 +22,15 @@ div.artist-box-row {
     max-height: 44px;
 }
 
+div.artist-img {
+    height: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 216px;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #cccccc;
+}
+
 div.conne-sd-row {
     position: absolute;
     width: 100%;

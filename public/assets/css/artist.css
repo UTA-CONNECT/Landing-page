@@ -15,6 +15,34 @@ div.artist-box-row {
     padding-right: 7%;
 }
 
+#artist-box-left {
+    position: relative;
+}
+
+#artist-box-left::after {
+    content: "";
+    background: #fcee21;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    height: 50%;
+    width: 4px;
+}
+
+#artist-box-right {
+    position: relative;
+}
+
+#artist-box-right::after {
+    content: "";
+    background: #fcee21;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    height: 50%;
+    width: 4px;
+}
+
 #artist-divider-img {
     height: 50%;
     width: auto;

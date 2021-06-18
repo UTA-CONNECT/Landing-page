@@ -10,6 +10,10 @@ div.conne-sd-container-position {
     padding: 0;
 }
 
+div.conne-sd-container-position div.row {
+    margin: 0;
+}
+
 img.conne-sd {
     width: 100%;
     animation: cartoonRotate 2s infinite;

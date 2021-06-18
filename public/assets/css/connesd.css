@@ -1,11 +1,13 @@
 div.conne-sd-container {
     position: relative;
     height: 0px;
+    padding: 0;
 }
 
 div.conne-sd-container-position {
     position: absolute;
     top: -330px;
+    padding: 0;
 }
 
 img.conne-sd {

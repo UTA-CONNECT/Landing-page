@@ -312,6 +312,18 @@ div.third {
     color: #000000;
 }
 
+span.live {
+    /* font-family: GodoB; */
+    font-size: 27.3px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fccd21;
+}
+
 img.title {
     margin-top: 300px;
     width: 100%;
@@ -354,15 +366,16 @@ A:hover {text-decoration:none; color: red;}
         /* font-family: GodoB; */
         font-size: 17.3px;
     }
-    
     div.second {
         /* font-family: GodoM; */
-        font-size: 10px;
+        font-size: 13px;
     }
-    
     div.third {
         /* font-family: GodoB; */
-        font-size: 10px;
+        font-size: 13px;
+    }
+    span.live {
+        font-size: 17.3px;
     }
 }
 @media (min-width:500px) and (max-width: 576px) {
@@ -398,15 +411,16 @@ A:hover {text-decoration:none; color: red;}
         /* font-family: GodoB; */
         font-size: 25px;
     }
-    
     div.second {
         /* font-family: GodoM; */
         font-size: 18px;
     }
-    
     div.third {
         /* font-family: GodoB; */
         font-size: 18px;
+    }
+    span.live {
+        font-size: 25px;
     }
 }
 @media (min-width:576px) and (max-width: 768px) {

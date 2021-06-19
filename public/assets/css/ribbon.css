@@ -28,6 +28,17 @@
     width: 100%;
 }
 
+.ribbon-container .small-ticket {
+    position: absolute;
+    left: -150px;
+    top: 950px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.ribbon-container .small-ticket img {
+    width: 100%;
+}
 
 @media (max-width: 576px) {
     .ribbon-container .top img {
@@ -35,6 +46,10 @@
         display: none;
     }
     .ribbon-container .bottom img {
+        visibility: hidden;
+        display: none;
+    }
+    .ribbon-container .small-ticket {
         visibility: hidden;
         display: none;
     }
@@ -60,6 +75,12 @@
         visibility: inherit;
         display: initial;
     }
+    .ribbon-container .small-ticket {
+        left: -70px;
+        top: 380px;
+        visibility: inherit;
+        display: initial;
+    }
 }
 @media (min-width: 768px) {
     .ribbon-container .top {
@@ -77,6 +98,10 @@
     }
     .ribbon-container .bottom img {
         width: 70%;
+    }
+    .ribbon-container .small-ticket {
+        left: -90px;
+        top: 520px;
     }
 }
 @media (min-width: 992px) {
@@ -96,6 +121,10 @@
     .ribbon-container .bottom img {
         width: 70%;
     }
+    .ribbon-container .small-ticket {
+        left: -150px;
+        top: 690px;
+    }
 }
 @media (min-width: 1200px) {
     .ribbon-container .top {
@@ -114,6 +143,10 @@
     .ribbon-container .bottom img {
         width: 100%;
     }
+    .ribbon-container .small-ticket {
+        left: -150px;
+        top: 800px;
+    }
 }
 @media (min-width: 1400px) {
     .ribbon-container .top {
@@ -127,5 +160,9 @@
     .ribbon-container .bottom {
         left: -150px;
         top: -57px;
+    }
+    .ribbon-container .small-ticket {
+        left: -150px;
+        top: 950px;
     }
 }

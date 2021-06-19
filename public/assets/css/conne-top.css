@@ -11,3 +11,110 @@
 #attack-on-conne-chan-container {
     pointer-events: none;
 }
+
+.concept-title-section {
+    position: relative;
+}
+
+.concept-title-section-position {
+    position: absolute;
+    top: -92px;
+}
+
+.concept-title-section-position .rotate {
+    transform: rotate(7deg);
+}
+
+.concept-title-text {
+    letter-spacing: 7px;
+    font-size: 30px;
+    font-family: GmarketSans-Bold;
+    transform: scale(1) rotate(0deg) translate(0px, 0px) skew(22deg, 0deg);
+    display: inline-block;font-style: italic;
+}
+
+.concept-title-text span {
+    color: #f0c520;
+}
+
+.concept-title-sub-text {
+    letter-spacing: 7px;
+    font-size: 30px;
+    font-family: GmarketSans-Bold;
+    transform: rotateY(-9deg);
+    transform: scale(1) rotate(0deg) translate(0px, 0px) skew(22deg, 0deg);
+    display: inline-block;
+    color: #f0c520;
+    font-style: italic;
+}
+
+@media (max-width: 576px) {
+    .concept-title-text {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    .concept-title-sub-text {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    .concept-title-section-position {
+        top: -32px;
+    }
+}
+@media (min-width: 576px) {
+    .concept-title-text {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    .concept-title-sub-text {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    .concept-title-section-position {
+        top: -32px;
+    }
+}
+@media (min-width: 768px) {
+    .concept-title-text {
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+    .concept-title-sub-text {
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+    .concept-title-section-position {
+        top: -32px;
+    }
+}
+@media (min-width: 992px) {
+    .concept-title-text {
+        letter-spacing: 6px;
+        font-size: 25px;
+    }
+    .concept-title-sub-text {
+        letter-spacing: 6px;
+        font-size: 25px;
+    }
+    .concept-title-section-position {
+        top: -62px;
+    }
+}
+@media (min-width: 1200px) {
+    .concept-title-text {
+        letter-spacing: 7px;
+        font-size: 30px;
+    }
+    .concept-title-sub-text {
+        letter-spacing: 7px;
+        font-size: 30px;
+    }
+    .concept-title-section-position {
+        top: -82px;
+    }
+}
+@media (min-width: 1400px) {
+    .concept-title-section-position {
+        top: -92px;
+    }
+}

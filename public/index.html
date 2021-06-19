@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="assets/css/ticketing-info.css">
         <link rel="stylesheet" href="assets/css/sns.css">
         <link rel="stylesheet" href="assets/css/section.css">
+        <link rel="stylesheet" href="assets/css/conne-top.css">
 
         <meta property="og:title" content="우타코네"/>
         <meta property="og:type" content="article"/>
@@ -58,7 +59,7 @@
             </div>
         </div>
         <!-- Only screen size -->
-        <div class="container d-none d-xl-block">
+        <div class="container d-none d-xl-block" id="attack-on-conne-chan-container">
             <div class="row justify-content-center title-ribbon">
                 <div class="col-12 col-md-10 col-lg-10 col-xl-9">
                     <img src="assets/img/title_ribbon.png">
@@ -84,9 +85,7 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-6">
                     <img
-                        src="assets/img/microphone.png"
-                        style="min-width: 400px;width:100%;max-width: 460px;    position: absolute;
-          left: -100px; animation: upDown 1.5s alternate infinite ease-in-out;">
+                        src="assets/img/microphone.png" id="microphone">
                 </div>
             </div>
         </div>
@@ -101,9 +100,9 @@
                     </div>
                     <div class="row sns-icon-row">
                         <div class="col-12">
-                            <img src="assets/img/twitter.png" alt="">
-                            <img src="assets/img/facebook.png" alt="">
-                            <img src="assets/img/instagram.png" alt="">
+                            <img src="assets/img/twitter.png" alt="" onclick="openPageInNewTab(`https://google.com`, 'twitter')" id="sns-twitter">
+                            <img src="assets/img/facebook.png" alt="" onclick="openPageInNewTab(`https://google.com`, 'facebook')">
+                            <img src="assets/img/instagram.png" alt="" onclick="openPageInNewTab(`https://google.com`, 'instagram')">
                         </div>
                     </div>
                 </div>
@@ -364,5 +363,6 @@
         <script src="src/ticketing-info.js"></script>
         <script src="src/artist.js"></script>
         <script src="src/firebase-script.js"></script>
+        <script src="src/sns.js"></script>
     </body>
 </html>

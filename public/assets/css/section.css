@@ -33,7 +33,7 @@ div.concert-info-block-position {
 @media (min-width: 1200px) {
     div.concert-info-block-position {
         top: -250px;
-        z-index: -1;
+        /* z-index: -1; */
     }
 }
 @media (min-width: 1400px) {

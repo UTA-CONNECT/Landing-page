@@ -1,0 +1,13 @@
+#microphone {
+    min-width: 400px;
+    width: 100%;
+    max-width: 460px;
+    position: absolute;
+    left: -100px;
+    animation: upDown 1.5s alternate infinite ease-in-out;
+    pointer-events: none;
+}
+
+#attack-on-conne-chan-container {
+    pointer-events: none;
+}

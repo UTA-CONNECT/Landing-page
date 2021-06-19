@@ -40,6 +40,46 @@
     width: 100%;
 }
 
+.ribbon-container .ticketing-1 {
+    position: absolute;
+    left: -232px;
+    top: -596px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.ribbon-container .ticketing-1 img {
+    /* width: 100%; */
+    margin-left: 640px;
+}
+
+.ribbon-container .ticketing-2 {
+    position: absolute;
+    left: -40px;
+    top: -222px;
+    z-index: -9;
+    pointer-events: none;
+}
+
+.ribbon-container .ticketing-2 img {
+    /* width: 100%; */
+    margin-left: 640px;
+}
+
+.ribbon-container .ticketing-3 {
+    position: absolute;
+    left: -50px;
+    top: -80px;
+    z-index: -9;
+    pointer-events: none;
+}
+
+.ribbon-container .ticketing-3 img {
+    /* width: 100%; */
+    margin-left: 71px;
+    margin-top: 10px;
+}
+
 @media (max-width: 576px) {
     .ribbon-container .top img {
         visibility: hidden;
@@ -50,6 +90,20 @@
         display: none;
     }
     .ribbon-container .small-ticket {
+        visibility: hidden;
+        display: none;
+    }
+
+    .ribbon-container .ticketing-2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .ribbon-container .ticketing-1 {
+        visibility: hidden;
+        display: none;
+    }
+    .ribbon-container .ticketing-3 {
         visibility: hidden;
         display: none;
     }
@@ -81,6 +135,20 @@
         visibility: inherit;
         display: initial;
     }
+
+    .ribbon-container .ticketing-2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .ribbon-container .ticketing-1 {
+        visibility: hidden;
+        display: none;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+    }
 }
 @media (min-width: 768px) {
     .ribbon-container .top {
@@ -102,6 +170,10 @@
     .ribbon-container .small-ticket {
         left: -90px;
         top: 520px;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
     }
 }
 @media (min-width: 992px) {
@@ -125,6 +197,12 @@
         left: -150px;
         top: 690px;
     }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+        left: -157px;
+        top: -80px;
+    }
 }
 @media (min-width: 1200px) {
     .ribbon-container .top {
@@ -147,6 +225,10 @@
         left: -150px;
         top: 800px;
     }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+    }
 }
 @media (min-width: 1400px) {
     .ribbon-container .top {
@@ -164,5 +246,20 @@
     .ribbon-container .small-ticket {
         left: -150px;
         top: 950px;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: inherit;
+        display: initial;
+        left: -40px;
+        top: -63px;
+    }
+    .ribbon-container .ticketing-2 {
+        visibility: inherit;
+        display: initial;
+    }
+
+    .ribbon-container .ticketing-1 {
+        visibility: inherit;
+        display: initial;
     }
 }

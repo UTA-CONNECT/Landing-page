@@ -17,11 +17,6 @@ body {
     /* background-size: contain, contain; */
 }
 
-div.meet {
-    transform: rotate(-7deg);
-    padding-left: 5px;
-}
-
 div.block1 {
     /* background-image: url("../img/block_1.png"); */
     background-repeat: no-repeat;
@@ -57,10 +52,7 @@ div.block1-container div.block1-body-container div.block1-text-container .gap-ro
 }
 
 div.block1-title {
-    height: 160px;
-}
-
-div.block1-title div {
+    height: 200px;
     font-family: GmarketSans-Bold;
     font-size: 42px;
     font-weight: bold;
@@ -74,9 +66,6 @@ div.block1-title div {
 
 div.block1-sub-title {
     height: 200px;
-}
-
-div.block1-sub-title div {
     font-family: GmarketSans-Bold;
     font-size: 30px;
     font-weight: bold;
@@ -87,12 +76,8 @@ div.block1-sub-title div {
     text-align: center;
     color: #333333;
 }
-
 div.block1-info-title {
     height: 50px;
-}
-
-div.block1-info-title div {
     /* font-family: KoPubWorldDotum; */
     font-size: 24.4px;
     font-weight: 300;
@@ -103,6 +88,11 @@ div.block1-info-title div {
     text-align: left;
     color: #333333;
     white-space: pre-line;
+}
+
+span.meet {
+    transform: rotate(-10deg);
+    padding-left: 5px;
 }
 
 div.block2 {
@@ -201,7 +191,6 @@ div.conne-top-container-back {
 }
 
 div.conne-top-container-small-back {
-
     position: absolute;
     z-index: -1;
     /* position: absolute; */
@@ -329,49 +318,58 @@ img.title {
     width: 100%;
 }
 
-A:link {text-decoration:none; color:black;}
-A:visited {text-decoration:none; color:black;}
-A:hover {text-decoration:none; color: red;}
+A:link {
+    text-decoration: none;
+    color: black;
+}
+A:visited {
+    text-decoration: none;
+    color: black;
+}
+A:hover {
+    text-decoration: none;
+    color: red;
+}
 
 @media (max-width: 500px) {
-    div.block1-title div {
-        font-size: 25px;
-        line-height: 1;
-        height: 130px;
+    div.block1-container div.block1-text-container {
+        top: 50px;
     }
 
-    div.block2-title div {
+    div.block1-title {
+        font-size: 25px;
+        line-height: 1;
+        height: 50px;
+    }
+
+    div.block2-title {
         font-size: 25px;
         line-height: 1;
         height: 150px;
     }
 
-    div.block1-sub-title div {
-        font-size: 12px;
+    div.block1-sub-title {
+        font-size: 10px;
         line-height: 1;
-        height: 370px;
+        height: 30px;
     }
-    div.block1-info-title div {
-        font-size: 11px;
+    div.block1-info-title {
+        font-size: 9px;
         line-height: 1;
-        height: 580px;
+        height: 70px;
     }
 
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 25px;
+    span.meet {
+        padding-left: 3px;
     }
 
     div.first {
-        /* font-family: GodoB; */
         font-size: 17.3px;
     }
     div.second {
-        /* font-family: GodoM; */
         font-size: 13px;
     }
     div.third {
-        /* font-family: GodoB; */
         font-size: 13px;
     }
     span.live {
@@ -383,10 +381,14 @@ A:hover {text-decoration:none; color: red;}
     }
 }
 @media (min-width:500px) and (max-width: 576px) {
-    div.block1-title div {
+    div.block1-container div.block1-text-container {
+        top: 50px;
+    }
+
+    div.block1-title {
         font-size: 25px;
         line-height: 1;
-        height: 120px;
+        height: 70px;
     }
 
     div.block2-title div {
@@ -395,32 +397,28 @@ A:hover {text-decoration:none; color: red;}
         height: 150px;
     }
 
-    div.block1-sub-title div {
-        font-size: 15px;
+    div.block1-sub-title {
+        font-size: 18px;
         line-height: 1;
-        height: 340px;
+        height: 90px;
     }
-    div.block1-info-title div {
+    div.block1-info-title {
         font-size: 15px;
         line-height: 1;
-        height: 530px;
+        height: 30px;
     }
 
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 25px;
+    span.meet {
+        padding-left: 3px;
     }
 
     div.first {
-        /* font-family: GodoB; */
         font-size: 25px;
     }
     div.second {
-        /* font-family: GodoM; */
         font-size: 18px;
     }
     div.third {
-        /* font-family: GodoB; */
         font-size: 18px;
     }
     span.live {
@@ -432,6 +430,10 @@ A:hover {text-decoration:none; color: red;}
     }
 }
 @media (min-width:576px) and (max-width: 768px) {
+    div.block1-container div.block1-text-container {
+        top: 80px;
+    }
+
     div.title-ribbon img {
         width: 100%;
     }
@@ -442,7 +444,7 @@ A:hover {text-decoration:none; color: red;}
         margin: 0 auto;
     }
 
-    div.block1-title div {
+    div.block1-title {
         font-size: 30px;
         line-height: 1;
         height: 100px;
@@ -454,20 +456,19 @@ A:hover {text-decoration:none; color: red;}
         height: 120px;
     }
 
-    div.block1-sub-title div {
+    div.block1-sub-title {
         font-size: 20px;
         line-height: 1;
-        height: 290px;
+        height: 50px;
     }
-    div.block1-info-title div {
+    div.block1-info-title {
         font-size: 15px;
         line-height: 1;
-        height: 470px;
+        height: 70px;
     }
 
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 20px;
+    span.meet {
+        padding-left: 3px;
     }
 
     img.title {
@@ -475,10 +476,14 @@ A:hover {text-decoration:none; color: red;}
     }
 }
 @media (min-width:768px) and (max-width: 992px) {
-    div.block1-title div {
+    div.block1-container div.block1-text-container {
+        top: 100px;
+    }
+
+    div.block1-title {
         font-size: 40px;
         line-height: 1;
-        height: 80px;
+        height: 120px;
     }
 
     div.block2-title div {
@@ -487,20 +492,15 @@ A:hover {text-decoration:none; color: red;}
         height: 100px;
     }
 
-    div.block1-sub-title div {
+    div.block1-sub-title {
         font-size: 25px;
         line-height: 1;
-        height: 250px;
+        height: 90px;
     }
-    div.block1-info-title div {
+    div.block1-info-title {
         font-size: 20px;
         line-height: 1;
-        height: 400px;
-    }
-
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 15px;
+        height: 90px;
     }
 
     img.title {
@@ -508,10 +508,10 @@ A:hover {text-decoration:none; color: red;}
     }
 }
 @media (min-width:992px) and (max-width: 1200px) {
-    div.block1-title div {
+    div.block1-title {
         font-size: 40px;
         line-height: 1;
-        height: 50px;
+        height: 150px;
     }
 
     div.block2-title div {
@@ -520,20 +520,15 @@ A:hover {text-decoration:none; color: red;}
         height: 80px;
     }
 
-    div.block1-sub-title div {
+    div.block1-sub-title {
         font-size: 30px;
         line-height: 1;
-        height: 150px;
+        height: 70px;
     }
-    div.block1-info-title div {
+    div.block1-info-title {
         font-size: 25px;
         line-height: 1;
-        height: 280px;
-    }
-
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 10px;
+        height: 120px;
     }
 
     img.title {

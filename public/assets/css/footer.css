@@ -1,4 +1,3 @@
-/* STYLES SPECIFIC TO FOOTER  */
 .footer {
     width: 100%;
     position: relative;
@@ -16,41 +15,26 @@
     text-align: center;
     color: #ffffff;
 }
+hr.line {
+    border: none;
+    height: 1px;
+    background: #ffffff;
+    background: repeating-linear-gradient(90deg,#ffffff,#ffffff 6px,transparent 6px,transparent 12px);
+}
 @media only screen and (min-width: 1280px) {
     .contain {
         width: 1200px;
         margin: 0 auto;
     }
 }
-@media only screen and (max-width: 1139px) {
-    .contain .social {
-        width: 1000px;
-        display: block;
-    }
-    .social h1 {
-        margin: 0;
-    }
-}
 @media only screen and (max-width: 950px) {
     .footer .col {
         width: 33%;
-    }
-    .footer .col h1 {
-        font-size: 14px;
-    }
-    .footer .col ul li {
-        font-size: 13px;
     }
 }
 @media only screen and (max-width: 500px) {
     .footer .col {
         width: 50%;
-    }
-    .footer .col h1 {
-        font-size: 14px;
-    }
-    .footer .col ul li {
-        font-size: 13px;
     }
 }
 @media only screen and (max-width: 340px) {

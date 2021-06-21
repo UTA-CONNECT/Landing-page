@@ -164,7 +164,7 @@ div.title-ribbon {
     margin-top: 365px;
     margin-left: 0;
     margin-right: 0;
-    animation: upDown 1.5s alternate infinite ease-in-out;
+    animation: upDown-tiny 1.5s alternate infinite ease-in-out;
 }
 
 div.title-ribbon img {
@@ -187,7 +187,7 @@ div.conne-top-container-back {
     background-position: center;
     background-size: cover;
     min-height: 1000px;
-    animation: upDown 1.5s alternate infinite ease-in-out;
+    animation: upDown-little 1.5s alternate infinite ease-in-out;
 }
 
 div.conne-top-container-small-back {
@@ -202,7 +202,7 @@ div.conne-top-container-small-back {
     background-position: center;
     background-size: cover;
     min-height: 1000px;
-    animation: upDown 1.5s alternate infinite ease-in-out;
+    animation: upDown-little 1.5s alternate infinite ease-in-out;
 }
 
 div.conne-top-container {

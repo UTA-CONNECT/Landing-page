@@ -4,6 +4,18 @@
     }
 }
 
+@keyframes upDown-little {
+    to {
+        transform: translatey(25px);
+    }
+}
+
+@keyframes upDown-tiny {
+    to {
+        transform: translatey(12.5px);
+    }
+}
+
 @keyframes cartoonRotate {
     0% {
         transform: rotate(-5deg);

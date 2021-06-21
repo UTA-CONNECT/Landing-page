@@ -16,10 +16,7 @@
     color: #ffffff;
 }
 hr.line {
-    border: none;
-    height: 1px;
-    background: #ffffff;
-    background: repeating-linear-gradient(90deg,#ffffff,#ffffff 6px,transparent 6px,transparent 12px);
+    border-top : 3px dashed #ffffff;
 }
 @media only screen and (min-width: 1280px) {
     .contain {

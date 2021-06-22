@@ -337,7 +337,7 @@ A:hover {
     }
 
     div.block1-container div.block1-text-container {
-        top: 50px;
+        top: 12vw;
     }
 
     div.block1-title {
@@ -355,12 +355,12 @@ A:hover {
     div.block1-sub-title {
         font-size: 10px;
         line-height: 1;
-        height: 50px;
+        height: 10vw;
     }
     div.block1-info-title {
         font-size: 9px;
         line-height: 1;
-        height: 40px;
+        height: 15vw;
     }
 
     span.meet {

@@ -100,210 +100,8 @@ pre.artist-desc {
     color: #333333;
 }
 
-div.conne-sd-row {
-    position: absolute;
-    width: 100%;
-    z-index: -99;
-}
-
-div.conne-sd-col {
-    position: relative;
-}
-
-div.conne-sd-col img {
-    width: 100%;
-    visibility: hidden;
-}
-
-div.conne-sd-col div.conne-sd-bg {
-    height: 100%;
-    position: absolute;
-    z-index: -999;
-    /* top: -200px;
-    right: -10px; */
-    width: 90%;
-    animation: cartoonRotate 2s infinite;
-}
-
-div.conne-sd-col div.conne-sd-bg div {
-    height: 100%;
-}
-
-div.conne-sd-col div.conne-sd-bg div div {
-    background-image: url("../img/conne_chan_sd.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-div.conne-sd-quote-row {
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-}
-
-div.conne-sd-quote-col {
-    position: relative;
-}
-
-div.conne-sd-quote-col img {
-    width: 60%;
-    visibility: hidden;
-}
-
-div.conne-sd-quote-col div.conne-sd-quote-bg {
-    height: 100%;
-    position: absolute;
-    z-index: -999;
-    /* top: -90px;
-    right: 190px; */
-    animation: cartoonRotateFlip 2s infinite;
-}
-
-div.conne-sd-quote-col div.conne-sd-quote-bg div {
-    height: 100%;
-}
-
-div.conne-sd-quote-col div.conne-sd-quote-bg div div {
-    background-image: url("../img/quote.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-div.conne-sd-ribbon-bottom-row {
-    position: absolute;
-    width: 100%;
-    z-index: 1999;
-    top: 580px;
-    right: 170px;
-}
-
-div.conne-sd-ribbon-bottom-col {
-    position: relative;
-}
-
-div.conne-sd-ribbon-bottom-col img {
-    width: 80%;
-    visibility: hidden;
-}
-
-div.conne-sd-ribbon-bottom-col div.conne-sd-ribbon-bottom-bg {
-    height: 100%;
-    position: absolute;
-    z-index: -1000;
-    top: 4px;
-    /* top: 120px;
-    right: 215px; */
-}
-
-div.conne-sd-ribbon-bottom-bg div {
-    height: 100%;
-}
-
-div.conne-sd-ribbon-bottom-bg div div {
-    background-image: url("../img/ribbon_top_2.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-div.conne-sd-ribbon-top-row {
-    position: absolute;
-    width: 100%;
-    z-index: -100;
-    top: -100px;
-    right: -150px;
-    /* left: 625px; */
-}
-
-div.conne-sd-ribbon-top-col {
-    position: relative;
-}
-
-div.conne-sd-ribbon-top-col img {
-    width: 80%;
-    visibility: hidden;
-}
-
-div.conne-sd-ribbon-top-col div.conne-sd-ribbon-top-bg {
-    height: 100%;
-    position: absolute;
-    z-index: -1000;
-    top: 100px;
-    padding: 0;
-    /* top: 120px;
-    right: 215px; */
-}
-
-div.conne-sd-ribbon-top-bg div {
-    height: 100%;
-}
-
-div.conne-sd-ribbon-top-bg div div {
-    background-image: url("../img/ribbon_top_1.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-div.conne-sd-large-ticket-row {
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-}
-
-div.conne-sd-large-ticket-col {
-    position: relative;
-}
-
-div.conne-sd-large-ticket-col img {
-    width: 80%;
-    visibility: hidden;
-}
-
-div.conne-sd-large-ticket-col div.conne-sd-large-ticket-bg {
-    height: 100%;
-    position: absolute;
-    z-index: -1000;
-    padding: 0;
-    /* top: 120px;
-    right: 215px; */
-}
-
-div.conne-sd-large-ticket-bg div {
-    height: 100%;
-}
-
-div.conne-sd-large-ticket-bg div div {
-    background-image: url("../img/ticket_large.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 @media (max-width: 576px) {
-    div.conne-sd-bg {
-        top: -30px !important;
-        left: 100px !important;
-    }
-    div.conne-sd-col div.conne-sd-bg div {
-        height: 30vw !important;
-    }
-    div.conne-sd-quote-bg {
-        top: -10px !important;
-        right: 20px !important;
-    }
-    div.conne-sd-quote-col div.conne-sd-quote-bg div {
-        height: 20vw !important;
-    }
-    div.conne-sd-large-ticket-bg {
-        top: -30px !important;
-        left: -70px !important;
-    }
-    div.conne-sd-large-ticket-bg div {
-        height: 20vw !important;
-    }
     div.artist-title {
         font-size: 18px;
     }
@@ -328,49 +126,7 @@ div.conne-sd-large-ticket-bg div div {
         height: 30%;
     }
 }
-
 @media (min-width: 576px) and (max-width: 767px) {
-    div.conne-sd-ribbon-bottom-bg {
-        visibility: hidden;
-    }
-
-    div.conne-sd-ribbon-top-col {
-        display: none;
-    }
-    div.conne-sd-ribbon-top-bg {
-        visibility: hidden;
-        display: none;
-    }
-
-    /* div.conne-sd-large-ticket-row {
-        left: -50px !important;
-    }
-
-    div.conne-sd-large-ticket-bg {
-        left: -25px !important;
-        padding: 0;
-    } */
-    div.conne-sd-bg {
-        top: -70px !important;
-        left: 100px !important;
-    }
-    div.conne-sd-col div.conne-sd-bg div {
-        height: 34vw !important;
-    }
-    div.conne-sd-quote-bg {
-        top: -20px !important;
-        right: 50px !important;
-    }
-    div.conne-sd-quote-col div.conne-sd-quote-bg div {
-        height: 20vw !important;
-    }
-    div.conne-sd-large-ticket-bg {
-        top: -80px !important;
-        left: -110px !important;
-    }
-    div.conne-sd-large-ticket-bg div {
-        height: 20vw !important;
-    }
     div.artist-title {
         font-size: 22px;
     }
@@ -396,36 +152,6 @@ div.conne-sd-large-ticket-bg div div {
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-    div.conne-sd-ribbon-bottom-bg {
-        top: -130px !important;
-    }
-
-    div.conne-sd-ribbon-top-bg {
-        top: -80px !important;
-        left: -5px !important;
-    }
-
-    div.conne-sd-bg {
-        top: -100px !important;
-        left: 50px !important;
-    }
-    div.conne-sd-col div.conne-sd-bg div {
-        height: 30vw !important;
-    }
-    div.conne-sd-quote-bg {
-        top: -50px !important;
-        right: 130px !important;
-    }
-    div.conne-sd-quote-col div.conne-sd-quote-bg div {
-        height: 20vw !important;
-    }
-    div.conne-sd-large-ticket-bg {
-        top: -70px !important;
-        left: -70px !important;
-    }
-    div.conne-sd-large-ticket-bg div {
-        height: 18vw !important;
-    }
     div.artist-title {
         font-size: 28px;
     }
@@ -454,35 +180,6 @@ div.conne-sd-large-ticket-bg div div {
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-    div.conne-sd-ribbon-bottom-bg {
-        top: -75px !important;
-    }
-
-    div.conne-sd-ribbon-top-bg {
-        top: -10px !important;
-    }
-
-    div.conne-sd-bg {
-        top: -110px !important;
-        left: 100px !important;
-    }
-    div.conne-sd-col div.conne-sd-bg div {
-        height: 25vw !important;
-    }
-    div.conne-sd-quote-bg {
-        top: -50px !important;
-        right: 100px !important;
-    }
-    div.conne-sd-quote-col div.conne-sd-quote-bg div {
-        height: 15vw !important;
-    }
-    div.conne-sd-large-ticket-bg {
-        top: -80px !important;
-        left: -70px !important;
-    }
-    div.conne-sd-large-ticket-bg div {
-        height: 15vw !important;
-    }
     div.artist-title {
         font-size: 30px;
     }
@@ -533,25 +230,6 @@ div.conne-sd-large-ticket-bg div div {
     }
 }
 @media (min-width: 1400px) {
-    div.conne-sd-ribbon-bottom-bg {
-        top: 4px !important;
-    }
-    div.conne-sd-ribbon-top-bg {
-        top: 50px !important;
-        left: 5px !important;
-    }
-
-    div.conne-sd-bg {
-        top: -210px !important;
-    }
-    div.conne-sd-quote-bg {
-        top: -100px !important;
-        right: 225px !important;
-    }
-    div.conne-sd-large-ticket-bg {
-        top: -110px !important;
-        left: -50px !important;
-    }
     div.artist-title {
         font-size: 42px;
     }

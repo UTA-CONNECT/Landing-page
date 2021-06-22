@@ -332,6 +332,10 @@ A:hover {
 }
 
 @media (max-width: 500px) {
+    div.block1 {
+        padding-bottom: 50px;
+    }
+
     div.block1-container div.block1-text-container {
         top: 50px;
     }
@@ -381,6 +385,10 @@ A:hover {
     }
 }
 @media (min-width:500px) and (max-width: 576px) {
+    div.block1 {
+        padding-bottom: 70px;
+    }
+    
     div.block1-container div.block1-text-container {
         top: 50px;
     }
@@ -430,6 +438,10 @@ A:hover {
     }
 }
 @media (min-width:576px) and (max-width: 768px) {
+    div.block1 {
+        padding-bottom: 70px;
+    }
+    
     div.block1-container div.block1-text-container {
         top: 80px;
     }

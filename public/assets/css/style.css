@@ -332,8 +332,12 @@ A:hover {
 }
 
 @media (max-width: 500px) {
+    div.block1 {
+        padding-bottom: 50px;
+    }
+
     div.block1-container div.block1-text-container {
-        top: 50px;
+        top: 12vw;
     }
 
     div.block1-title {
@@ -351,12 +355,12 @@ A:hover {
     div.block1-sub-title {
         font-size: 10px;
         line-height: 1;
-        height: 50px;
+        height: 10vw;
     }
     div.block1-info-title {
         font-size: 9px;
         line-height: 1;
-        height: 40px;
+        height: 10vw;
     }
 
     span.meet {
@@ -381,6 +385,10 @@ A:hover {
     }
 }
 @media (min-width:500px) and (max-width: 576px) {
+    div.block1 {
+        padding-bottom: 70px;
+    }
+    
     div.block1-container div.block1-text-container {
         top: 50px;
     }
@@ -430,6 +438,10 @@ A:hover {
     }
 }
 @media (min-width:576px) and (max-width: 768px) {
+    div.block1 {
+        padding-bottom: 70px;
+    }
+    
     div.block1-container div.block1-text-container {
         top: 80px;
     }

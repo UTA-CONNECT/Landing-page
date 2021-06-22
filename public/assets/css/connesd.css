@@ -45,7 +45,7 @@ img.conne-sd-ticket-large {
 
 @media (max-width: 576px) {
     div.conne-sd-container-position {
-        top: -80px;
+        top: -20vw;
     }
 
     img.conne-sd-quote {
@@ -55,7 +55,7 @@ img.conne-sd-ticket-large {
     }
 
     img.conne-sd-ticket-large {
-        top: 20px;
+        top: 10px;
         left: 60px;
     }
 }

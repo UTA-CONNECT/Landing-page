@@ -1,3 +1,5 @@
+const divSelector = 'div.ticketing-info';
+const canvasID = 'ticketing-info-canvas';
 const ticketingCanvas = document.getElementById('ticketing-info-canvas');
 const ctx = ticketingCanvas.getContext('2d');
 ctx.imageSmoothingEnabled = true;
@@ -11,7 +13,7 @@ let initFlag = true;
 let canvasBoundingRect = ticketingCanvas.getBoundingClientRect();
 
 function setCanvasBlockSize() {
-    const rect = document.querySelector('div.ticketing-info').getBoundingClientRect();
+    const rect = document.querySelector(divSelector).getBoundingClientRect();
     // console.log(ticketingCanvas);
     ticketingCanvas.style.width = `${rect.width}px`;
     ticketingCanvas.style.height = `${rect.height}px`;
@@ -24,7 +26,7 @@ function setCanvasBlockSize() {
 }
 
 function setCanvasInitBlockSize() {
-    const rect = document.querySelector('div.ticketing-info').getBoundingClientRect();
+    const rect = document.querySelector(divSelector).getBoundingClientRect();
     // console.log(ticketingCanvas);
     ticketingCanvas.style.width = `4444px`;
     ticketingCanvas.style.height = `613px`;
@@ -139,6 +141,15 @@ class TicketText {
     }
 }
 
+function clickListener(x, y, w, h, url) {
+    analytics.logEvent('ticketing-card-click', {
+        status: 'ok',
+        type: 'click',
+        x, y, w, h
+    });
+    window.open(url, '_blank');
+}
+
 window.addEventListener('resize', (e) => {
     setCanvasBlockSize();
     render();
@@ -170,6 +181,22 @@ Promise.all([
             textDict[key] = new TicketText(Number(ticketInfoItem.x), Number(ticketInfoItem.y), ticketInfoItem.text, ticketInfoItem.font, 
                 `${Number(ticketInfoItem.fontSize) * pixelRatio}`, ticketInfoItem.fontSize);
         })
+
+        if (snapshot.data().ticketUrl) {
+            ticketingCanvas.addEventListener('click', (e) => {
+                // console.log('click', e);
+                const rect = ticketingCanvas.getBoundingClientRect();
+                clickListener(e.clientX, e.clientY, rect.width, rect.height, snapshot.data().ticketUrl);
+            })
+        } else {
+            analytics.logEvent('ticket-info-renderer', {
+                status: 'warn',
+                message: 'No ticket url available.'
+            });
+        }
+        // ticketingCanvas.addEventListener('touchend', (e) => {
+        //     console.log('touch', e);
+        // })
     } else {
         analytics.logEvent('ticket-info-renderer', {
             status: 'warn',

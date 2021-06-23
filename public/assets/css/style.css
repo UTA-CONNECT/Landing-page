@@ -236,9 +236,11 @@ div.date-place-info {
     font-weight: bold;
     margin-top: 40px;
     text-align: center;
-    transform: rotate(7deg);
+    /* transform: rotate(7deg); */
     font-size: 1.5em;
     letter-spacing: 7px;
+    font-style: italic;
+    transform: scale(1) rotate(7deg) translate(0px, 0px) skew(18deg, 0deg);
     /* padding: 20px; */
 }
 
@@ -247,9 +249,11 @@ div.date-place-info-small {
     font-weight: bold;
     margin-top: 40px;
     text-align: center;
-    transform: rotate(7deg);
-    font-size: 1.2em;
+    /* transform: rotate(7deg); */
+    font-size: 1.1em;
     letter-spacing: 2.5px;
+    font-style: italic;
+    transform: scale(1) rotate(7deg) translate(0px, 0px) skew(18deg, 0deg);
     /* padding: 20px; */
 }
 

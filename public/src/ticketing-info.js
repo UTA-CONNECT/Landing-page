@@ -7,6 +7,7 @@ console.log(`pixelRatio: ${pixelRatio}`);
 
 const DEBUG_MODE = false;
 const angle = -3;
+let initFlag = true;
 let canvasBoundingRect = ticketingCanvas.getBoundingClientRect();
 
 function setCanvasBlockSize() {
@@ -16,6 +17,19 @@ function setCanvasBlockSize() {
     ticketingCanvas.style.height = `${rect.height}px`;
     ticketingCanvas.width = rect.width * pixelRatio;
     ticketingCanvas.height = rect.height * pixelRatio;
+
+    canvasBoundingRect = ticketingCanvas.getBoundingClientRect();
+    canvasBoundingRect.width = canvasBoundingRect.width * pixelRatio;
+    canvasBoundingRect.height = canvasBoundingRect.height * pixelRatio;
+}
+
+function setCanvasInitBlockSize() {
+    const rect = document.querySelector('div.ticketing-info').getBoundingClientRect();
+    // console.log(ticketingCanvas);
+    ticketingCanvas.style.width = `4444px`;
+    ticketingCanvas.style.height = `613px`;
+    ticketingCanvas.width = 4444 * pixelRatio;
+    ticketingCanvas.height = 613 * pixelRatio;
 
     canvasBoundingRect = ticketingCanvas.getBoundingClientRect();
     canvasBoundingRect.width = canvasBoundingRect.width * pixelRatio;
@@ -80,7 +94,7 @@ class TicketImg {
         console.log(this.getLinearFuncAlpha(degree), this.scale, rotatedImgHeight, this.originImg.height, 'w', -rect.width / 2, rect.width / 2);
     }
 
-    draw(degree, rect) {
+    draw(degree, rect, rotate) {
         console.log(rect);
 
         console.log(this.x, this.y, this.scale);
@@ -136,31 +150,47 @@ let textDict = {};
 
 Promise.all([
     imgLoader('./assets/img/ticketing-container.png'), 
+    imgLoader('./assets/img/ticketing-container-mapped.png'), 
     imgLoader('./assets/img/ticketing-container-mapped-text.png'), 
     fontLoader('GmarketSansBold', './assets/fonts/GmarketSansOTF/GmarketSansBold.otf'),
     fontLoader('GmarketSansLight', './assets/fonts/GmarketSansOTF/GmarketSansLight.otf'),
     fontLoader('GmarketSansMedium', './assets/fonts/GmarketSansOTF/GmarketSansMedium.otf')
 ])
 .then(imgList => {
-    const [ticketingContainer, ticketingContainerMapped] = imgList;
+    const [ticketingContainer, ticketingContainerMapped, ticketingContainerText] = imgList;
     ticketMapped = new TicketImg(0, 0, ticketingContainerMapped); 
     return true;
 })
 .then(() => {
-    // textDict['ticket1'] = new TicketText(-150, -200, '사전예매 - 33,000₩', 'GmarketSansBold', '50', '#333333');
-    // textDict['ticket1vat'] = new TicketText(360, -224, '(VAT 포함)', 'GmarketSansMedium', '18', '#000000');
-    // textDict['ticket1date'] = new TicketText(-150, -150, '2021. 8. 1. ~ 9. 1.', 'GmarketSansMedium', '28', '#333333');
-    // textDict['ticket1info1'] = new TicketText(-150, -100, '환불 및 취소시 수수료가 발생할 수 있습니다.', 'GmarketSansMedium', '28', '#333333');
-    // textDict['ticket1info2'] = new TicketText(-150, -70, '자세한 내용은 인터파크 티켓에서 확인해주세요.', 'GmarketSansMedium', '28', '#333333');
-    // textDict['ticket1buy'] = new TicketText(-150, -20, '사전 예매 하러가기 >', 'GmarketSansMedium', '24', '#333333');
-    // textDict['ticket1buyInfo'] = new TicketText(80, -22, '추가 안내메시지.', 'GmarketSansMedium', '18', '#333333');
+
+    textDict['ticket1'] = new TicketText(-150, -200, '사전예매 - 33,000₩', 'GmarketSansBold', `${50 * pixelRatio}`, '#333333');
+    textDict['ticket1vat'] = new TicketText(360, -224, '(VAT 포함)', 'GmarketSansMedium', `${18 * pixelRatio}`, '#000000');
+    textDict['ticket1date'] = new TicketText(-150, -150, '2021. 8. 1. ~ 9. 1.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+    textDict['ticket1info1'] = new TicketText(-150, -100, '환불 및 취소시 수수료가 발생할 수 있습니다.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+    textDict['ticket1info2'] = new TicketText(-150, -70, '자세한 내용은 인터파크 티켓에서 확인해주세요.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+    textDict['ticket1buy'] = new TicketText(-150, -20, '사전 예매 하러가기 >', 'GmarketSansMedium', `${24 * pixelRatio}`, '#333333');
+    textDict['ticket1buyInfo'] = new TicketText(80, -22, '추가 안내메시지.', 'GmarketSansMedium', `${18 * pixelRatio}`, '#333333');
 
 
-    // textDict['ticket2'] = new TicketText(-150, 75, '현장 구매 - 40,000₩', 'GmarketSansBold', '50', '#333333');
-    // textDict['ticket2vat'] = new TicketText(360, 51, '(VAT 포함)', 'GmarketSansMedium', '18', '#000000');
-    // textDict['ticket2date'] = new TicketText(-150, 125, '공연 당일 (2021. 10. 1.)', 'GmarketSansMedium', '28', '#333333');
-    // textDict['ticket2info1'] = new TicketText(-150, 200, '사전 예매로 매진시 현장 구매가 어려울 수 있습니다.', 'GmarketSansMedium', '28', '#333333');
-    // textDict['ticket2buy'] = new TicketText(-150, 250, '* 티켓의 개인간 거래를 금합니다. 적발시 법적 조치에 취해질 수 있습니다.', 'GmarketSansMedium', '20', '#333333');
+    textDict['ticket2'] = new TicketText(-150, 75, '현장 구매 - 40,000₩', 'GmarketSansBold', `${50 * pixelRatio}`, '#333333');
+    textDict['ticket2vat'] = new TicketText(360, 51, '(VAT 포함)', 'GmarketSansMedium', `${18 * pixelRatio}`, '#000000');
+    textDict['ticket2date'] = new TicketText(-150, 125, '공연 당일 (2021. 10. 1.)', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+    textDict['ticket2info1'] = new TicketText(-150, 200, '사전 예매로 매진시 현장 구매가 어려울 수 있습니다.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+    textDict['ticket2buy'] = new TicketText(-150, 250, '* 티켓의 개인간 거래를 금합니다. 적발시 법적 조치에 취해질 수 있습니다.', 'GmarketSansMedium', `${20 * pixelRatio}`, '#333333');
+    setCanvasInitBlockSize();
+    render();
+    return true;
+})
+.then(() => {
+    const imgUrl = ticketingCanvas.toDataURL();
+    // download();
+    return imgLoader(imgUrl);
+})
+.then(img => {
+    textDict = {};
+    ticketMapped = new TicketImg(0, 0, img); 
+
+    setCanvasBlockSize();
     render();
 })
 .catch(err => {
@@ -187,19 +217,30 @@ function responsivePosition(width) {
 function render() {
     ctx.clearRect(0, 0, canvasBoundingRect.width, canvasBoundingRect.height);
     const [x, y] = responsivePosition(ticketingCanvas.getBoundingClientRect().width);
-    if (ticketMapped) {
-        ticketMapped.x = x;
-        ticketMapped.y = y;
-        ticketMapped.update(angle, canvasBoundingRect);
-        ticketMapped.draw(angle, canvasBoundingRect);  
+    if (initFlag) {
+        if (ticketMapped) {
+            ticketMapped.x = 0;
+            ticketMapped.y = 0;
+            ticketMapped.update(0, canvasBoundingRect);
+            ticketMapped.draw(0, canvasBoundingRect);  
+        }
+        Object.keys(textDict).forEach(key => {
+            textDict[key].alphaX = 0;
+            textDict[key].alphaY = 0;
+            textDict[key].draw(angle, canvasBoundingRect);
+        })
+    } else {
+        if (ticketMapped) {
+            ticketMapped.x = x;
+            ticketMapped.y = y;
+            ticketMapped.update(angle, canvasBoundingRect);
+            ticketMapped.draw(angle, canvasBoundingRect);  
+        }
     }
-    Object.keys(textDict).forEach(key => {
-        textDict[key].alphaX = x;
-        textDict[key].alphaY = y;
-        textDict[key].draw(angle, canvasBoundingRect);
-    })
     ctx.translate(0, 0);
     ctx.rotate(0);
+
+    initFlag = false;
 }
 
 function download() {

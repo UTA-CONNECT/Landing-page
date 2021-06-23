@@ -159,24 +159,37 @@ Promise.all([
 .then(imgList => {
     const [ticketingContainer, ticketingContainerMapped, ticketingContainerText] = imgList;
     ticketMapped = new TicketImg(0, 0, ticketingContainerMapped); 
-    return true;
+    return firebase.firestore().collection("page").doc("utaconne-landing").get();
 })
-.then(() => {
-
-    textDict['ticket1'] = new TicketText(-150, -200, '사전예매 - 33,000₩', 'GmarketSansBold', `${50 * pixelRatio}`, '#333333');
-    textDict['ticket1vat'] = new TicketText(360, -224, '(VAT 포함)', 'GmarketSansMedium', `${18 * pixelRatio}`, '#000000');
-    textDict['ticket1date'] = new TicketText(-150, -150, '2021. 8. 1. ~ 9. 1.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
-    textDict['ticket1info1'] = new TicketText(-150, -100, '환불 및 취소시 수수료가 발생할 수 있습니다.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
-    textDict['ticket1info2'] = new TicketText(-150, -70, '자세한 내용은 인터파크 티켓에서 확인해주세요.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
-    textDict['ticket1buy'] = new TicketText(-150, -20, '사전 예매 하러가기 >', 'GmarketSansMedium', `${24 * pixelRatio}`, '#333333');
-    textDict['ticket1buyInfo'] = new TicketText(80, -22, '추가 안내메시지.', 'GmarketSansMedium', `${18 * pixelRatio}`, '#333333');
-
-
-    textDict['ticket2'] = new TicketText(-150, 75, '현장 구매 - 40,000₩', 'GmarketSansBold', `${50 * pixelRatio}`, '#333333');
-    textDict['ticket2vat'] = new TicketText(360, 51, '(VAT 포함)', 'GmarketSansMedium', `${18 * pixelRatio}`, '#000000');
-    textDict['ticket2date'] = new TicketText(-150, 125, '공연 당일 (2021. 10. 1.)', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
-    textDict['ticket2info1'] = new TicketText(-150, 200, '사전 예매로 매진시 현장 구매가 어려울 수 있습니다.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
-    textDict['ticket2buy'] = new TicketText(-150, 250, '* 티켓의 개인간 거래를 금합니다. 적발시 법적 조치에 취해질 수 있습니다.', 'GmarketSansMedium', `${20 * pixelRatio}`, '#333333');
+.then((snapshot) => {
+    // console.log(snapshot.data());
+    if (snapshot.exists) {
+        const ticketInfoData = snapshot.data().ticketInfo;
+        Object.keys(ticketInfoData).forEach(key => {
+            const ticketInfoItem = ticketInfoData[key];
+            textDict[key] = new TicketText(Number(ticketInfoItem.x), Number(ticketInfoItem.y), ticketInfoItem.text, ticketInfoItem.font, 
+                `${Number(ticketInfoItem.fontSize) * pixelRatio}`, ticketInfoItem.fontSize);
+        })
+    } else {
+        analytics.logEvent('ticket-info-renderer', {
+            status: 'warn',
+            message: 'No ticket data available.'
+        });
+        textDict['ticket1'] = new TicketText(-150, -200, '사전예매 - ???₩', 'GmarketSansBold', `${50 * pixelRatio}`, '#333333');
+        textDict['ticket1vat'] = new TicketText(360, -224, '(VAT 포함)', 'GmarketSansMedium', `${18 * pixelRatio}`, '#000000');
+        textDict['ticket1date'] = new TicketText(-150, -150, '????. ?. ?. ~ ?. ?.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+        textDict['ticket1info1'] = new TicketText(-150, -100, '환불 및 취소시 수수료가 발생할 수 있습니다.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+        textDict['ticket1info2'] = new TicketText(-150, -70, '자세한 내용은 인터파크 티켓에서 확인해주세요.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+        textDict['ticket1buy'] = new TicketText(-150, -20, '사전 예매 하러가기 >', 'GmarketSansMedium', `${24 * pixelRatio}`, '#333333');
+        textDict['ticket1buyInfo'] = new TicketText(80, -22, '추가 안내메시지.', 'GmarketSansMedium', `${18 * pixelRatio}`, '#333333');
+    
+    
+        textDict['ticket2'] = new TicketText(-150, 75, '현장 구매 - ???₩', 'GmarketSansBold', `${50 * pixelRatio}`, '#333333');
+        textDict['ticket2vat'] = new TicketText(360, 51, '(VAT 포함)', 'GmarketSansMedium', `${18 * pixelRatio}`, '#000000');
+        textDict['ticket2date'] = new TicketText(-150, 125, '공연 당일 (????. ?. ?.)', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+        textDict['ticket2info1'] = new TicketText(-150, 200, '사전 예매로 매진시 현장 구매가 어려울 수 있습니다.', 'GmarketSansMedium', `${28 * pixelRatio}`, '#333333');
+        textDict['ticket2buy'] = new TicketText(-150, 250, '* 티켓의 개인간 거래를 금합니다. 적발시 법적 조치에 취해질 수 있습니다.', 'GmarketSansMedium', `${20 * pixelRatio}`, '#333333');
+    }
     setCanvasInitBlockSize();
     render();
     return true;
@@ -195,6 +208,10 @@ Promise.all([
 })
 .catch(err => {
     console.log('err', err);
+    analytics.logEvent('ticket-info-renderer', {
+        status: 'fail',
+        message: err.message
+    });
 })
 
 function responsivePosition(width) {

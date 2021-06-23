@@ -160,15 +160,15 @@ let ticketMapped = undefined;
 let textDict = {};
 
 Promise.all([
-    imgLoader('./assets/img/ticketing-container.png'), 
+    // imgLoader('./assets/img/ticketing-container.png'), 
     imgLoader('./assets/img/ticketing-container-mapped.png'), 
-    imgLoader('./assets/img/ticketing-container-mapped-text.png'), 
+    // imgLoader('./assets/img/ticketing-container-mapped-text.png'), 
     fontLoader('GmarketSansBold', './assets/fonts/GmarketSansOTF/GmarketSansBold.otf'),
     fontLoader('GmarketSansLight', './assets/fonts/GmarketSansOTF/GmarketSansLight.otf'),
     fontLoader('GmarketSansMedium', './assets/fonts/GmarketSansOTF/GmarketSansMedium.otf')
 ])
 .then(imgList => {
-    const [ticketingContainer, ticketingContainerMapped, ticketingContainerText] = imgList;
+    const [ticketingContainerMapped] = imgList;
     ticketMapped = new TicketImg(0, 0, ticketingContainerMapped); 
     return firebase.firestore().collection("page").doc("utaconne-landing").get();
 })

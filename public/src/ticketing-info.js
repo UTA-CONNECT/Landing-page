@@ -163,7 +163,7 @@ Promise.all([
 })
 .then((snapshot) => {
     // console.log(snapshot.data());
-    if (snapshot.exists) {
+    if (snapshot.exists && snapshot.data().ticketInfo && Object.keys(snapshot.data().ticketInfo).length === 12) {
         const ticketInfoData = snapshot.data().ticketInfo;
         Object.keys(ticketInfoData).forEach(key => {
             const ticketInfoItem = ticketInfoData[key];

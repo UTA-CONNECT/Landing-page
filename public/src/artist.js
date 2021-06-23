@@ -77,6 +77,26 @@ function init() {
             artistItem.ele.querySelector('#desc').textContent = artistItem.desc;
             artistItem.ele.querySelector('div.artist-img').style.backgroundImage = `url('${artistItem.img}')`
             artistItem.ele.querySelector('div.artist-img').setAttribute('data-url', artistItem.href);
+
+            artistItem.ele.addEventListener('click', (e) => {
+                const currentEle = artistItem.ele
+                const url = currentEle.querySelector('div.artist-img').getAttribute('data-url')
+                const artistName = currentEle.querySelector('#name').textContent
+                if (artistName) {
+                    analytics.logEvent('artist-clicked', {
+                        status: 'ok',
+                        artist: artistName
+                    });
+                } else {
+                    analytics.logEvent('artist-clicked', {
+                        status: 'warn',
+                        artist: 'Undefined artist name'
+                    });
+                }
+                if (url) {
+                    window.open(url, '_blank');
+                }
+            })
         }
     })
 }

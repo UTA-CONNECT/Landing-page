@@ -108,27 +108,29 @@ function responsiveBlockList() {
     })
 }
 
-firebase.firestore().collection("page").doc("utaconne-landing").get()
-.then((snapshot) => {
-    if (snapshot.exists && snapshot.data().artist && snapshot.data().artist.length === 7) {
-        artistDataList = snapshot.data().artist
-        artistDataList.forEach(item => {
-            if (item.desc) {
-                item.desc = item.desc.replace(/\\n/g, '\n');
-            }
-        })
-    } else {
+window.onload = () => {
+    firebase.firestore().collection("page").doc("utaconne-landing").get()
+    .then((snapshot) => {
+        if (snapshot.exists && snapshot.data().artist && snapshot.data().artist.length === 7) {
+            artistDataList = snapshot.data().artist
+            artistDataList.forEach(item => {
+                if (item.desc) {
+                    item.desc = item.desc.replace(/\\n/g, '\n');
+                }
+            })
+        } else {
+            analytics.logEvent('artist-init-list', {
+                status: 'warn',
+                message: 'Wrong artist data received.'
+            });
+        }
+        init();
+        responsiveBlockList();
+    })
+    .catch(err => {
         analytics.logEvent('artist-init-list', {
-            status: 'warn',
-            message: 'Wrong artist data received.'
+            status: 'fail',
+            message: err.message
         });
-    }
-    init();
-    responsiveBlockList();
-})
-.catch(err => {
-    analytics.logEvent('artist-init-list', {
-        status: 'fail',
-        message: err.message
-    });
-})
+    })
+}

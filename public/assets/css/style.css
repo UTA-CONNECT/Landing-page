@@ -330,7 +330,6 @@ A:hover {
     text-decoration: none;
     color: red;
 }
-
 @media (max-width: 500px) {
     div.block1 {
         padding-bottom: 50px;
@@ -345,13 +344,6 @@ A:hover {
         line-height: 1;
         height: 50px;
     }
-
-    div.block2-title {
-        font-size: 25px;
-        line-height: 1;
-        height: 150px;
-    }
-
     div.block1-sub-title {
         font-size: 10px;
         line-height: 1;
@@ -395,29 +387,15 @@ A:hover {
 
     div.block1-title {
         font-size: 25px;
-        line-height: 1;
         height: 70px;
     }
-
-    div.block2-title div {
-        font-size: 25px;
-        line-height: 1;
-        height: 150px;
-    }
-
     div.block1-sub-title {
         font-size: 18px;
-        line-height: 1;
         height: 90px;
     }
     div.block1-info-title {
         font-size: 15px;
-        line-height: 1;
         height: 30px;
-    }
-
-    span.meet {
-        padding-left: 3px;
     }
 
     div.first {
@@ -437,15 +415,7 @@ A:hover {
         margin-top: 200px;
     }
 }
-@media (min-width:576px) and (max-width: 768px) {
-    div.block1 {
-        padding-bottom: 70px;
-    }
-    
-    div.block1-container div.block1-text-container {
-        top: 80px;
-    }
-
+@media (min-width:576px) and (max-width: 767px) {
     div.title-ribbon img {
         width: 100%;
     }
@@ -455,63 +425,47 @@ A:hover {
         top: -150px;
         margin: 0 auto;
     }
+    
+    div.block1 {
+        padding-bottom: 70px;
+    }
+    
+    div.block1-container div.block1-text-container {
+        top: 80px;
+    }
 
     div.block1-title {
         font-size: 30px;
-        line-height: 1;
         height: 100px;
     }
-
-    div.block2-title div {
-        font-size: 30px;
-        line-height: 1;
-        height: 120px;
-    }
-
     div.block1-sub-title {
         font-size: 20px;
-        line-height: 1;
         height: 50px;
     }
     div.block1-info-title {
         font-size: 15px;
-        line-height: 1;
         height: 70px;
-    }
-
-    span.meet {
-        padding-left: 3px;
     }
 
     img.title {
         margin-top: 225px;
     }
 }
-@media (min-width:768px) and (max-width: 992px) {
+@media (min-width:768px) and (max-width: 991px) {
     div.block1-container div.block1-text-container {
         top: 100px;
     }
 
     div.block1-title {
         font-size: 40px;
-        line-height: 1;
         height: 120px;
     }
-
-    div.block2-title div {
-        font-size: 40px;
-        line-height: 1;
-        height: 100px;
-    }
-
     div.block1-sub-title {
         font-size: 25px;
-        line-height: 1;
         height: 90px;
     }
     div.block1-info-title {
-        font-size: 20px;
-        line-height: 1;
+        font-size: 19px;
         height: 90px;
     }
 
@@ -519,31 +473,33 @@ A:hover {
         margin-top: 250px;
     }
 }
-@media (min-width:992px) and (max-width: 1200px) {
+@media (min-width:992px) and (max-width: 1199px) {
     div.block1-title {
         font-size: 40px;
-        line-height: 1;
         height: 150px;
     }
-
-    div.block2-title div {
-        font-size: 40px;
-        line-height: 1;
-        height: 80px;
-    }
-
     div.block1-sub-title {
         font-size: 30px;
-        line-height: 1;
         height: 70px;
     }
     div.block1-info-title {
-        font-size: 25px;
-        line-height: 1;
+        font-size: 24.4px;
         height: 120px;
     }
 
     img.title {
         margin-top: 300px;
+    }
+}
+@media (min-width:1200px) and (max-width: 1399px) {
+    div.block1-title {
+        height: 170px;
+    }
+
+    div.block1-sub-title {
+        height: 150px;
+    }
+    div.block1-info-title {
+        height: 40px;
     }
 }

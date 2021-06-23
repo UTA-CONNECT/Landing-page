@@ -16,6 +16,7 @@ let artistDataList = [
         desc: '섭외가 완료되었습니다.\n기대해주세요!',
         ele: undefined,
         height: 0.2,
+        href: ''
     },
     {
         type: 'hr',
@@ -29,6 +30,7 @@ let artistDataList = [
         desc: '섭외가 완료되었습니다.\n기대해주세요!',
         ele: undefined,
         height: 0.2,
+        href: ''
     },
     {
         type: 'hr',
@@ -42,6 +44,7 @@ let artistDataList = [
         desc: '섭외가 완료되었습니다.\n기대해주세요!',
         ele: undefined,
         height: 0.2,
+        href: ''
     }
 ]
 
@@ -72,6 +75,8 @@ function init() {
             console.log(artistItem.ele);
             artistItem.ele.querySelector('#name').textContent = artistItem.title;
             artistItem.ele.querySelector('#desc').textContent = artistItem.desc;
+            artistItem.ele.querySelector('div.artist-img').style.backgroundImage = `url('${artistItem.img}')`
+            artistItem.ele.querySelector('div.artist-img').setAttribute('data-url', artistItem.href);
         }
     })
 }

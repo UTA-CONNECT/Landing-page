@@ -68,7 +68,7 @@
 
 - [이미지를 회전 시켜도 양 끝에 하얀 여백이 생기지 않도록 대응](https://github.com/UTA-CONNECT/Landing-page/blob/main/Ver.1.0%20development%20history.md#%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%ED%9A%8C%EC%A0%84-%EC%8B%9C%EC%BC%9C%EB%8F%84-%EC%96%91-%EB%81%9D%EC%97%90-%ED%95%98%EC%96%80-%EC%97%AC%EB%B0%B1%EC%9D%B4-%EC%83%9D%EA%B8%B0%EC%A7%80-%EC%95%8A%EB%8F%84%EB%A1%9D-%EB%8C%80%EC%9D%91)
 
-- `Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응
+- [`Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응](https://github.com/UTA-CONNECT/Landing-page/blob/main/Ver.1.0%20development%20history.md#firebase-firestore%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B3%80%EA%B2%BD%EA%B0%80%EB%8A%A5%EC%84%B1-%EC%9E%88%EB%8A%94-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%82%B4%EC%9A%A9-%EB%8C%80%EC%9D%91)
 
 
 #### 하나의 이미지가 다른 이미지의 뒤에서 앞으로 나오는 디자인 대응
@@ -147,3 +147,39 @@
 물론 브라우저 크기 변화에 따라 다시 렌더링해야 할 경우엔 이벤트 리스너 등록시켜서 렌더링 호출 시킵니다.
 
 #### `Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응
+
+- Firestore 규칙 설정
+
+![스크린샷 2021-06-25 오후 2 17 25](https://user-images.githubusercontent.com/16532326/123373282-17859680-d5c0-11eb-8f95-8f029c9de078.png)
+
+나중을 위한 DB 쓰기 권한 개념을 설정 해놓았습니다.
+
+위의 경우 등록되어진 계정 중 `admin` 권한을 부여한 계정만이 해당 페이지의 데이터 수정을 어플리케이션 단에서 접근이 가능합니다.
+
+컨텐츠 중에서 변동 가능성이 높은 항목들이 존재합니다.
+
+![스크린샷 2021-06-25 오후 2 20 17](https://user-images.githubusercontent.com/16532326/123373519-7ba85a80-d5c0-11eb-9a70-77e2357ddc99.png)
+
+아티스트 목록의 경우 후보가 새로 등록되어지거나 삭제 될 수 있습니다.
+
+![스크린샷 2021-06-25 오후 2 22 22](https://user-images.githubusercontent.com/16532326/123373694-c4f8aa00-d5c0-11eb-9b0e-215230c08cde.png)
+
+Firestore 를 사용하였기 때문에 `/page/utaconne-landing` 의 `artist` 배열 타입의 필드에 해당 정보를 입력하였으며,
+
+![스크린샷 2021-06-25 오후 2 23 55](https://user-images.githubusercontent.com/16532326/123373790-fb362980-d5c0-11eb-9470-63dff5d005c2.png)
+
+페이지 초기화시 데이터를 읽어와 DOM 에 반영합니다.
+
+![스크린샷 2021-06-25 오후 2 25 21](https://user-images.githubusercontent.com/16532326/123373902-2fa9e580-d5c1-11eb-979a-4420280cf10d.png)
+
+티켓팅 안내의 경우에도 가격, 날짜, 안내사항이 수시로 변경될 수 있는 항목들이 존재합니다.
+
+![스크린샷 2021-06-25 오후 2 26 49](https://user-images.githubusercontent.com/16532326/123374020-641da180-d5c1-11eb-94c5-3b72a2834e61.png)
+
+같은 방식으로 DB에 데이터를 정의한 후
+
+![스크린샷 2021-06-25 오후 2 27 41](https://user-images.githubusercontent.com/16532326/123374085-81eb0680-d5c1-11eb-9f33-bfbec2ebc0fc.png)
+
+캔버스에 티켓팅 안내 렌더링을 할 시 텍스트 정보를 렌더링 시키는 방식으로 구현하였습니다.
+
+

@@ -64,9 +64,9 @@
 
 ### 커스텀 기능 개발
 
-- 하나의 이미지가 다른 이미지의 뒤에서 앞으로 나오는 디자인 대응
+- [하나의 이미지가 다른 이미지의 뒤에서 앞으로 나오는 디자인 대응](https://github.com/UTA-CONNECT/Landing-page/blob/main/Ver.1.0%20development%20history.md#%ED%95%98%EB%82%98%EC%9D%98-%EC%9D%B4%EB%AF%B8%EC%A7%80%EA%B0%80-%EB%8B%A4%EB%A5%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98-%EB%92%A4%EC%97%90%EC%84%9C-%EC%95%9E%EC%9C%BC%EB%A1%9C-%EB%82%98%EC%98%A4%EB%8A%94-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%8C%80%EC%9D%91)
 
-- 이미지를 회전 시켜도 양 끝에 하얀 여백이 생기지 않도록 대응
+- [이미지를 회전 시켜도 양 끝에 하얀 여백이 생기지 않도록 대응](https://github.com/UTA-CONNECT/Landing-page/blob/main/Ver.1.0%20development%20history.md#%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%ED%9A%8C%EC%A0%84-%EC%8B%9C%EC%BC%9C%EB%8F%84-%EC%96%91-%EB%81%9D%EC%97%90-%ED%95%98%EC%96%80-%EC%97%AC%EB%B0%B1%EC%9D%B4-%EC%83%9D%EA%B8%B0%EC%A7%80-%EC%95%8A%EB%8F%84%EB%A1%9D-%EB%8C%80%EC%9D%91)
 
 - `Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응
 
@@ -145,3 +145,5 @@
 ![스크린샷 2021-06-15 오후 10 48 54](https://user-images.githubusercontent.com/16532326/122064143-de189280-ce2b-11eb-81ac-7d484625dc2a.png)
 
 물론 브라우저 크기 변화에 따라 다시 렌더링해야 할 경우엔 이벤트 리스너 등록시켜서 렌더링 호출 시킵니다.
+
+#### `Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응

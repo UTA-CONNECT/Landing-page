@@ -143,11 +143,11 @@
 
 ![스크린샷 2021-06-15 오후 10 47 16](https://user-images.githubusercontent.com/16532326/122063945-ac073080-ce2b-11eb-97d1-2477c47cab9a.png)
 
+![2021-06-25-23531](https://user-images.githubusercontent.com/16532326/123375043-13a74380-d5c3-11eb-8a27-fd431f54a5bb.gif)
+
 그려질 캔버스 높이 크기와 비율을 계산하여 축소시킨 이미지로 렌더링 하였습니다.
 
 ![스크린샷 2021-06-15 오후 10 48 54](https://user-images.githubusercontent.com/16532326/122064143-de189280-ce2b-11eb-81ac-7d484625dc2a.png)
-
-![2021-06-25-23531](https://user-images.githubusercontent.com/16532326/123375043-13a74380-d5c3-11eb-8a27-fd431f54a5bb.gif)
 
 물론 브라우저 크기 변화에 따라 다시 렌더링해야 할 경우엔 이벤트 리스너 등록시켜서 렌더링 호출 시킵니다.
 

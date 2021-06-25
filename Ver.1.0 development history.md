@@ -75,7 +75,7 @@
 
 * [Pull request](https://github.com/UTA-CONNECT/Landing-page/pull/21)
 
-<img src="https://user-images.githubusercontent.com/16532326/121845730-d4eecf00-cd20-11eb-909f-191823174708.png" width="480"/>
+![asdf](https://user-images.githubusercontent.com/16532326/121845730-d4eecf00-cd20-11eb-909f-191823174708.png)
 
 오른쪽이 디자인상 배치도, 왼쪽이 개발을 이용하여 수정한 내용
 

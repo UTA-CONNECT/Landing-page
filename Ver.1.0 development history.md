@@ -71,7 +71,7 @@
 - [`Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응](https://github.com/UTA-CONNECT/Landing-page/blob/main/Ver.1.0%20development%20history.md#firebase-firestore%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B3%80%EA%B2%BD%EA%B0%80%EB%8A%A5%EC%84%B1-%EC%9E%88%EB%8A%94-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%82%B4%EC%9A%A9-%EB%8C%80%EC%9D%91)
 
 
-#### 하나의 이미지가 다른 이미지의 뒤에서 앞으로 나오는 디자인 대응
+## 하나의 이미지가 다른 이미지의 뒤에서 앞으로 나오는 디자인 대응
 
 * [Pull request](https://github.com/UTA-CONNECT/Landing-page/pull/21)
 
@@ -110,7 +110,7 @@
 
 그 이유는 캐릭터 디자인 주변으로 그림자 효과가 들어가 있었기 때문에 주변 색과 원본 색이 튀어 보이는 문제 점이 있었기 때문입니다.
 
-#### 이미지를 회전 시켜도 양 끝에 하얀 여백이 생기지 않도록 대응
+## 이미지를 회전 시켜도 양 끝에 하얀 여백이 생기지 않도록 대응
 
 * [Pull request](https://github.com/UTA-CONNECT/Landing-page/pull/27)
 
@@ -146,7 +146,7 @@
 
 물론 브라우저 크기 변화에 따라 다시 렌더링해야 할 경우엔 이벤트 리스너 등록시켜서 렌더링 호출 시킵니다.
 
-#### `Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응
+## `Firebase Firestore`를 이용하여 변경가능성 있는 텍스트 내용 대응
 
 - Firestore 규칙 설정
 

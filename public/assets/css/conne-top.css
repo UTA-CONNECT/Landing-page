@@ -35,6 +35,7 @@
 
 .concept-title-text span {
     color: #f0c520;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #332, -1px 1px 0 #333, 1px 1px 0 #333;
 }
 
 .concept-title-sub-text {
@@ -46,6 +47,7 @@
     display: inline-block;
     color: #f0c520;
     font-style: italic;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #332, -1px 1px 0 #333, 1px 1px 0 #333;
 }
 
 @media (max-width: 576px) {

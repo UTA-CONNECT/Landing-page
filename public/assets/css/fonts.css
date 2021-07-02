@@ -18,3 +18,17 @@
             url("../fonts/GmarketSansOTF/GmarketSansMedium.otf") format("opentype"),
             url('../fonts/GmarketSansTTF/GamrketSansTTFMedium.ttf') format('truetype'),
 }
+
+@font-face {
+    font-family: 'KoPubWorldDotum';
+    src:  
+        url("../fonts/KOPUBWORLD_OTF/KoPubWorldDotum_ProLight.otf") format("opentype"),
+        url('../fonts/KOPUBWORLD_TTF/KoPubWorldDotumLight.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'GmarketSans-KSCpc-EUC-H';
+    src:  
+        url("../fonts/GmarketSansOTF/GmarketSansMedium.otf") format("opentype"),
+        url('../fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf') format('truetype'),
+}

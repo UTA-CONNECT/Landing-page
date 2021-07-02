@@ -78,7 +78,7 @@ div.block1-sub-title {
 }
 div.block1-info-title {
     height: 10px;
-    /* font-family: KoPubWorldDotum; */
+    font-family: KoPubWorldDotum;
     font-size: 24.4px;
     font-weight: 300;
     font-stretch: normal;

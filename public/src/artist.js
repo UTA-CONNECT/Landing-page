@@ -104,7 +104,9 @@ function init() {
 function responsiveBlockList() {
     const rect = document.querySelector('div.block2-body-container').getBoundingClientRect();
     artistDataList.forEach(artistItem => {
-        artistItem.ele.style.height = `${rect.height * artistItem.height}px`;
+        if (artistItem && artistItem.ele && artistItem.ele.style) {
+            artistItem.ele.style.height = `${rect.height * artistItem.height}px`;
+        }
     })
 }
 

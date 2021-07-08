@@ -149,12 +149,7 @@ function clickListener(x, y, w, h, url) {
     });
     window.open(url, '_blank');
 }
-
-window.addEventListener('resize', (e) => {
-    setCanvasBlockSize();
-    render();
-})
-setCanvasBlockSize();
+// setCanvasBlockSize();
 
 let ticketMapped = undefined;
 let textDict = {};
@@ -232,6 +227,11 @@ Promise.all([
 
     setCanvasBlockSize();
     render();
+
+    window.addEventListener('resize', (e) => {
+        setCanvasBlockSize();
+        render();
+    })
 })
 .catch(err => {
     console.log('err', err);

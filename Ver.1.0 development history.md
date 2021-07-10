@@ -83,7 +83,7 @@
 
 디자인 원본으론 위와 같이 캐릭터가 포함되어있지 않고 투명으로 처리된 이미지와
 
-![스크린샷 2021-06-25 오후 1 56 23](https://user-images.githubusercontent.com/16532326/123371651-228af780-d5bd-11eb-9f1e-751bc23ae0ba.png)
+![스크린샷 2021-06-25 오후 1 56 23](https://github.com/UTA-CONNECT/Landing-page/blob/main/public/assets/img/conne_chan_sparkle_eyes.png?raw=true)
 
 투명이 포함된 캐릭터 이미지로 구성되어있습니다.
 

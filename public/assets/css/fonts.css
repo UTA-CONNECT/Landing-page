@@ -32,3 +32,17 @@
         url("../fonts/GmarketSansOTF/GmarketSansMedium.otf") format("opentype"),
         url('../fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf') format('truetype'),
 }
+
+@font-face {
+    font-family: 'GodoB';
+    src:  
+        url("../fonts/GodoB_OTF/GodoB.otf") format("opentype"),
+        url('../fonts/GodoB_TTF/GodoB.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'GodoM';
+    src:  
+        url("../fonts/GodoB_OTF/GodoB.otf") format("opentype"),
+        url('../fonts/GodoB_TTF/GodoB.ttf') format('truetype'),
+}

@@ -272,7 +272,7 @@ div.coalition {
 }
 
 div.first {
-    /* font-family: GodoB; */
+    font-family: GodoB;
     font-size: 27.3px;
     font-weight: normal;
     font-stretch: normal;
@@ -284,7 +284,7 @@ div.first {
 }
 
 div.second {
-    /* font-family: GodoM; */
+    font-family: GodoM;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -296,7 +296,7 @@ div.second {
 }
 
 div.third {
-    /* font-family: GodoB; */
+    font-family: GodoB;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -308,7 +308,7 @@ div.third {
 }
 
 span.live {
-    /* font-family: GodoB; */
+    font-family: GodoB;
     font-size: 27.3px;
     font-weight: normal;
     font-stretch: normal;

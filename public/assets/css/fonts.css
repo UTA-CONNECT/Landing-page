@@ -37,12 +37,12 @@
     font-family: 'GodoB';
     src:  
         url("../fonts/GodoB_OTF/GodoB.otf") format("opentype"),
-        url('../fonts/GodoB_TTF/GodoB.ttf') format('truetype'),
+        url('../fonts/GodoB_TTF/GodoB.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'GodoM';
     src:  
         url("../fonts/GodoM_OTF/GodoM.otf") format("opentype"),
-        url('../fonts/GodoM_TTF/GodoM.ttf') format('truetype'),
+        url('../fonts/GodoM_TTF/GodoM.ttf') format('truetype');
 }

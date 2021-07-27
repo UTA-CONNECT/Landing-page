@@ -51,6 +51,13 @@ div.block1-container div.block1-body-container div.block1-text-container .gap-ro
     margin: 0 auto;
 }
 
+span.link {
+    padding-left: 10%;
+    background-image: url('../img/link.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;    
+}
+
 div.block1-title {
     height: 200px;
     font-family: GmarketSans-Bold;

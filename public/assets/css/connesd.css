@@ -68,9 +68,9 @@ img.conne-sd-ticket-large {
         left: 60px;
     }
     div.conne-sd-quote-text {
-        top: 42px;
-        left: 70px;
-        font-size: 0.1em;
+        top: 52px;
+        left: 80px;
+        font-size: 10px;
     }
 }
 @media (min-width: 576px) {

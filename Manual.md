@@ -79,3 +79,116 @@
 |O||img|아티스트 프로필 이미지 사진 링크|ex) `http://example.com/image.jpg` 비어있을 시 `?` 기호로 표시|
 |O||title|아티스트 이름||
 |X||type|박스의 종류|title / offset / box / hr|
+
+## 티켓팅 안내 데이터 수정
+
+<img width="503" alt="스크린샷 2021-08-06 오후 3 23 49" src="https://user-images.githubusercontent.com/16532326/128465671-c2c7108b-2592-4b34-b246-9f94e94e7490.png">
+
+아티스트는 페이지 내용 중 위 사진의 영역을 가리킵니다.
+
+![스크린샷 2021-08-06 오후 2 56 13](https://user-images.githubusercontent.com/16532326/128463319-c5a761d4-925c-4548-a340-cdc9659dd24d.png)
+
+1. 클라우드 관리자 페이지 -> `Firestore Database` 접속이 되어 있는 상태에서 `데이터 탭` -> `page` -> `utaconne-landing` 을 차례로 클릭 합니다.
+
+<img width="638" alt="스크린샷 2021-08-06 오후 3 09 14" src="https://user-images.githubusercontent.com/16532326/128464266-41f57ae0-955d-4208-bc86-b0451b53389c.png">
+
+2. 이후 오른쪽 영역에 표시되어지는 값 중 수정할 내용을 클릭합니다.
+
+<img width="665" alt="스크린샷 2021-08-06 오후 3 10 05" src="https://user-images.githubusercontent.com/16532326/128464326-d13d74b7-b409-4bf7-97ca-7b0d999c7a2c.png">
+
+3. 수정은 `값` 의 영역안의 내용만 수정합니다. 완료는 `업데이트` 버튼을 눌러 마무리합니다.
+
+`ticketInfo` 키 트리 이하 내용 수정
+
+|수정 가능|인덱스|키|설명|비고|
+|---|------|---|---|---|
+|O|ticket1||`사전예매 - 99,999₩` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket1buy||`사전 예매 하러가기 >` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket1buyInfo||`추가 안내메시지.` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket1date||`2021. 8. 1. ~ 9. 1.` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket1info1||`환불 및 취소시 수수료가 발생할 수 있습니다.` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket1info2||`자세한 내용은 인터파크 티켓에서 확인해주세요.` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket1vat||`(VAT 포함)` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket2||`현장 구매 - 40,000₩` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket2buy||`* 티켓의 개인간 거래를 금합니다. 적발시 법적 조치에 취해질 수 있습니다.` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket2date||`공연 당일 (2021. 10. 1.)` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket2info1||`사전 예매로 매진시 현장 구매가 어려울 수 있습니다.` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+|O|ticket2vat||`(VAT 포함)` 영역||
+|O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
+|O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
+|O||fontSize|폰트 크기||
+|O||text|표시할 내용||
+|O||x|표시할 내용 X좌표||
+|O||y|표시할 내용 y좌표||
+
+`ticketUrl` 키 내용 수정
+
+|수정 가능|인덱스|키|설명|비고|
+|---|------|---|---|---|
+|O|ticketUrl|ticketUrl|티켓팅 안내 영역을 클릭하였을 시 이동할 웹 페이지 링크|ex) `http://example.com`|

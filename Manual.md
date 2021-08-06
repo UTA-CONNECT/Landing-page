@@ -2,10 +2,10 @@
 
 차례
 
-- [클라우드 관리자 페이지 접속](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#클라우드 관리자 페이지 접속)
-- [아티스트 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#아티스트 데이터 수정)
-- [티켓팅 안내 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#티켓팅 안내 데이터 수정)
-- [기타 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#기타 데이터 수정)
+- [클라우드 관리자 페이지 접속](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B4%80%EB%A6%AC%EC%9E%90-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%91%EC%86%8D)
+- [아티스트 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95)
+- [티켓팅 안내 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#%ED%8B%B0%EC%BC%93%ED%8C%85-%EC%95%88%EB%82%B4-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95)
+- [기타 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#%EA%B8%B0%ED%83%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95)
 
 ---------------------------------------------------------
 

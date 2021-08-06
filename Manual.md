@@ -90,7 +90,7 @@
 
 <img width="503" alt="스크린샷 2021-08-06 오후 3 23 49" src="https://user-images.githubusercontent.com/16532326/128465671-c2c7108b-2592-4b34-b246-9f94e94e7490.png">
 
-아티스트는 페이지 내용 중 위 사진의 영역을 가리킵니다.
+티켓팅 안내는 페이지 내용 중 위 사진의 영역을 가리킵니다.
 
 ![스크린샷 2021-08-06 오후 2 56 13](https://user-images.githubusercontent.com/16532326/128463319-c5a761d4-925c-4548-a340-cdc9659dd24d.png)
 

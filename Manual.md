@@ -106,84 +106,84 @@
 
 |수정 가능|인덱스|키|설명|비고|
 |---|------|---|---|---|
-|O|ticket1||`사전예매 - 99,999₩` 영역||
+|-|ticket1||`사전예매 - 99,999₩` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket1buy||`사전 예매 하러가기 >` 영역||
+|-|ticket1buy||`사전 예매 하러가기 >` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket1buyInfo||`추가 안내메시지.` 영역||
+|-|ticket1buyInfo||`추가 안내메시지.` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket1date||`2021. 8. 1. ~ 9. 1.` 영역||
+|-|ticket1date||`2021. 8. 1. ~ 9. 1.` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket1info1||`환불 및 취소시 수수료가 발생할 수 있습니다.` 영역||
+|-|ticket1info1||`환불 및 취소시 수수료가 발생할 수 있습니다.` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket1info2||`자세한 내용은 인터파크 티켓에서 확인해주세요.` 영역||
+|-|ticket1info2||`자세한 내용은 인터파크 티켓에서 확인해주세요.` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket1vat||`(VAT 포함)` 영역||
+|-|ticket1vat||`(VAT 포함)` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket2||`현장 구매 - 40,000₩` 영역||
+|-|ticket2||`현장 구매 - 40,000₩` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket2buy||`* 티켓의 개인간 거래를 금합니다. 적발시 법적 조치에 취해질 수 있습니다.` 영역||
+|-|ticket2buy||`* 티켓의 개인간 거래를 금합니다. 적발시 법적 조치에 취해질 수 있습니다.` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket2date||`공연 당일 (2021. 10. 1.)` 영역||
+|-|ticket2date||`공연 당일 (2021. 10. 1.)` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket2info1||`사전 예매로 매진시 현장 구매가 어려울 수 있습니다.` 영역||
+|-|ticket2info1||`사전 예매로 매진시 현장 구매가 어려울 수 있습니다.` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||
 |O||text|표시할 내용||
 |O||x|표시할 내용 X좌표||
 |O||y|표시할 내용 y좌표||
-|O|ticket2vat||`(VAT 포함)` 영역||
+|-|ticket2vat||`(VAT 포함)` 영역||
 |O||color|폰트 색상|해쉬 값 칼라 코드 사용 권장 ex) `#333333`|
 |O||font|폰트 종류|GmarketSansBold / GmarketSansMedium / GmarketSansLight|
 |O||fontSize|폰트 크기||

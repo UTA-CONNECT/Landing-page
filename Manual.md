@@ -1,5 +1,9 @@
 # 페이지 데이터 수정 매뉴얼
 
+*주의*
+
+모든 데이터는 백업이 되어있지 않기 때문에 `삭제` 버튼을 클릭하여 오류가 발생하지 않도록 유의 바랍니다.
+
 차례
 
 - [클라우드 관리자 페이지 접속](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B4%80%EB%A6%AC%EC%9E%90-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%91%EC%86%8D)

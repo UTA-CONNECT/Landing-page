@@ -62,7 +62,7 @@
 |X|1|height|차지할 높이 비율 값|0.11 == 11%|
 |X||type|박스의 종류|title / offset / box / hr|
 |O|2|desc|아티스트 정보 부가 설명란|엔터는 \n 기호를 사용할 것|
-|O||height|차지할 높이 비율 값|0.11 == 11%|
+|X||height|차지할 높이 비율 값|0.11 == 11%|
 |O||href|아티스트 클릭시 이동할 웹 페이지 링크|ex) `http://example.com` |
 |O||img|아티스트 프로필 이미지 사진 링크|ex) `http://example.com/image.jpg` 비어있을 시 `?` 기호로 표시|
 |O||title|아티스트 이름||
@@ -70,7 +70,7 @@
 |X|3|height|차지할 높이 비율 값|0.11 == 11%|
 |X||type|박스의 종류|title / offset / box / hr|
 |O|4|desc|아티스트 정보 부가 설명란|엔터는 \n 기호를 사용할 것|
-|O||height|차지할 높이 비율 값|0.11 == 11%|
+|X||height|차지할 높이 비율 값|0.11 == 11%|
 |O||href|아티스트 클릭시 이동할 웹 페이지 링크|ex) `http://example.com` |
 |O||img|아티스트 프로필 이미지 사진 링크|ex) `http://example.com/image.jpg` 비어있을 시 `?` 기호로 표시|
 |O||title|아티스트 이름||
@@ -78,7 +78,7 @@
 |X|5|height|차지할 높이 비율 값|0.11 == 11%|
 |X||type|박스의 종류|title / offset / box / hr|
 |O|6|desc|아티스트 정보 부가 설명란|엔터는 \n 기호를 사용할 것|
-|O||height|차지할 높이 비율 값|0.11 == 11%|
+|X||height|차지할 높이 비율 값|0.11 == 11%|
 |O||href|아티스트 클릭시 이동할 웹 페이지 링크|ex) `http://example.com` |
 |O||img|아티스트 프로필 이미지 사진 링크|ex) `http://example.com/image.jpg` 비어있을 시 `?` 기호로 표시|
 |O||title|아티스트 이름||

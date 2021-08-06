@@ -13,6 +13,7 @@ div.artist-box-row {
     height: 100%;
     padding-left: 7%;
     padding-right: 7%;
+    cursor: pointer;
 }
 
 #artist-box-left {

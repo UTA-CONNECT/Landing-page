@@ -5,6 +5,7 @@
     background-size: cover; */
     height: 513px;
     padding: 0 !important;
+    cursor: pointer;
 }
 
 #ticketing-info-canvas {

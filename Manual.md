@@ -2,10 +2,10 @@
 
 차례
 
-- [클라우드 관리자 페이지 접속](#클라우드 관리자 페이지 접속)
-- [아티스트 데이터 수정](#아티스트 데이터 수정)
-- [티켓팅 안내 데이터 수정](#티켓팅 안내 데이터 수정)
-- [기타 데이터 수정](#기타 데이터 수정)
+- [클라우드 관리자 페이지 접속](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#클라우드 관리자 페이지 접속)
+- [아티스트 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#아티스트 데이터 수정)
+- [티켓팅 안내 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#티켓팅 안내 데이터 수정)
+- [기타 데이터 수정](https://github.com/UTA-CONNECT/Landing-page/blob/main/Manual.md#기타 데이터 수정)
 
 ---------------------------------------------------------
 

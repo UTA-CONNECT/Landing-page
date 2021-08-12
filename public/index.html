@@ -3,13 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>UTA-CONNECT</title>
+        <meta name="google-site-verification" content="3-8jpdlM8uluIWxHzWJrZCy70si-H631ePXuq0w9-9g" />
+        <meta name="google-site-verification" content="RvlqfhN__RbRauffnXS9wNiJ5rPHyHnRXifm90LPAgw" />
+        <meta name="description" content="너와 내가 이어지는 1st Live" />
+        <title>애니송커넥트</title>
+        <link rel="stylesheet" href="assets/css/fonts.css">
         <link href="assets/css/animation.css" rel="stylesheet"></link>
         <link href="assets/css/style.css" rel="stylesheet"></link>
         <link href="assets/css/artist.css" rel="stylesheet"></link>
+        <link href="assets/css/footer.css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="assets/css/connesd.css">
         <link rel="stylesheet" href="assets/css/ticketing-info.css">
+        <link rel="stylesheet" href="assets/css/sns.css">
+        <link rel="stylesheet" href="assets/css/section.css">
+        <link rel="stylesheet" href="assets/css/conne-top.css">
+        <link rel="stylesheet" href="assets/css/ribbon.css">
 
-        <meta property="og:title" content="우타코네"/>
+        <meta property="og:title" content="애니송커넥트"/>
         <meta property="og:type" content="article"/>
         <meta property="og:url" content="https://utaconne.com"/>
         <meta property="og:description" content="너와 내가 이어지는 1st Live"/>
@@ -41,11 +51,27 @@
                             <div class="col" style="height: 25px;"></div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-lg-12 date-place-info-small">2021. 4. 1. 8:00AM /// [장소명]</div>
+                            <div class="col-12 col-lg-12 date-place-info-small">----. -. -. --:--AM /// [장소명]</div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-10 col-xl-9" style="padding: 0;">
                                 <img src="assets/img/title.png" class="title">
+                            </div>
+                        </div>
+                        <div class="concept-title-section">
+                            <div class="container concept-title-section-position">
+                                <div class="row">
+                                    <div class="col-12 col-lg-11 col-md-12 text-end rotate">
+                                        <span class="concept-title-text">#너와_내가_이어지는_<span>1st_LIVE</span></span>
+                                    </div>
+                                    <div class="col-lg-2 d-lg-none"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-11 col-md-12 text-end rotate">
+                                        <span class="concept-title-sub-text"></span><!-- #ANISONG_CONNECT -->
+                                    </div>
+                                    <div class="col-lg-2 d-lg-none"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -53,7 +79,7 @@
             </div>
         </div>
         <!-- Only screen size -->
-        <div class="container d-none d-xl-block">
+        <div class="container d-none d-xl-block" id="attack-on-conne-chan-container">
             <div class="row justify-content-center title-ribbon">
                 <div class="col-12 col-md-10 col-lg-10 col-xl-9">
                     <img src="assets/img/title_ribbon.png">
@@ -63,11 +89,27 @@
             <div class="container conne-top-container">
                 <div class="row" style="height: 25px;"></div>
                 <div class="row">
-                    <div class="col-12 col-lg-12 date-place-info">2021. 4. 1. 8:00AM /// [장소명]</div>
+                    <div class="col-12 col-lg-12 date-place-info">----. -. -. --:--AM /// [장소명]</div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-10 col-xl-9">
                         <img src="assets/img/title.png" class="title">
+                    </div>
+                </div>
+                <div class="concept-title-section">
+                    <div class="container concept-title-section-position">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-11 text-end rotate">
+                                <span class="concept-title-text">#너와_내가_이어지는_<span>1st_LIVE</span></span>
+                            </div>
+                            <div class="col-lg-2 col-md-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-10 col-md-11 text-end rotate">
+                                <span class="concept-title-sub-text"></span><!-- #ANISONG_CONNECT -->
+                            </div>
+                            <div class="col-lg-2 col-md-1"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,276 +120,317 @@
             style="position: absolute;top:400px">
             <div class="row">
                 <div class="col-xl-3 col-lg-6">
-                    <img
-                        src="assets/img/microphone.png"
-                        style="min-width: 400px;width:100%;max-width: 460px;    position: absolute;
-          left: -100px; animation: upDown 1.5s alternate infinite ease-in-out;">
+                    <img src="assets/img/microphone.png" id="microphone">
                 </div>
             </div>
         </div>
-        <!-- INTRO CONCERT -->
-        <!-- Only mobile size -->
-        <div class="container-fluid block1 d-xl-none ">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 block1-container">
-                        <img src="assets/img/block_1.png"/>
-                        <div
-                            style="position: absolute; width: 100%; background-image: url(assets/img/block_1.png); background-repeat: no-repeat; background-size: contain; background-position: center; height: 100%; top: 0; z-index: -999;"></div>
-                        <div class="container-fluid justify-content-center block1-body-container">
-                            <div class="row gap-row">
-                                <div
-                                    class="col-12 block1-title d-flex align-items-center justify-content-center">
-                                    <div>행사 소개</div>
-                                </div>
-                            </div>
+        <div class="container-fluid concert-info-block">
+            <div class="concert-info-block-position">
+                <!-- SNS -->
+                <div class="container sns-container">
+                    <div class="row">
+                        <div class="col-12 share-text">
+                            share on...
                         </div>
-                        <div class="container-fluid justify-content-center block1-text-container">
-                            <div class="row gap-row">
-                                <div
-                                    class="col-12 block1-sub-title d-flex align-items-center justify-content-center">
-                                    <div>우타이테 콘서트에서</div>
-                                    <div class="meet" style="color: #f0c520;">만남</div>
-                                    <div>을 추구하면 안 되는 걸까?</div>
-                                </div>
-                            </div>
-                            <div class="row gap-row">
-                                <div
-                                    class="col-12 block1-info-title d-flex align-items-center justify-content-center">
-                                    <div>우타코네는 여러분들이 영상으로만 만나던 인기 우타이테 분들을 초청하여 
-                                        모두가 함께 즐길 수 있는 콘서트를 기획하게 되었습니다.
-                                        
-                                        이제 화면 안에서만이 아닌 한 공간에서 우타이테와 함께 
-                                        좋아하는 노래를 현장에서 즐겨보세요!</div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row sns-icon-row">
+                        <div class="col-12">
+                            <img
+                                src="assets/img/twitter.png"
+                                alt=""
+                                onclick="openPageInNewTab(`https://twitter.com/anisongconnect`, 'twitter')"
+                                id="sns-twitter">
+                            <img
+                                src="assets/img/facebook.png"
+                                alt=""
+                                onclick="openPageInNewTab(`https://www.facebook.com/Anisong-Connect-105115838485656`, 'facebook')">
+                            <img
+                                src="assets/img/instagram.png"
+                                alt=""
+                                onclick="openPageInNewTab(`https://www.instagram.com/anisongconnect/`, 'instagram')">
                         </div>
-                        <!-- CONNE CHAN SD -->
-                        <!-- <div class="row justify-content-end conne-sd-row">
-                            <div class="col"></div>
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-4 conne-sd-col">
-                                <img src="assets/img/conne_chan_sd.png"/>
-                                <div class="container-fluid conne-sd-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-1"></div>
-                        </div>
-                        <div class="row justify-content-end conne-sd-quote-row">
-                            <div class="col"></div>
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-4 conne-sd-quote-col">
-                                <img src="assets/img/quote.png"/>
-                                <div class="container-fluid conne-sd-quote-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-1"></div>
-                        </div>
-                        <div class="row conne-sd-large-ticket-row">
-                            <div class="col-lg-1 d-none  d-xl-block "></div>
-                            <div class="col-9 col-md-6 col-lg-5 col-xl-4 conne-sd-large-ticket-col">
-                                <img src="assets/img/ticket_large.png"/>
-                                <div class="container-fluid conne-sd-large-ticket-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-none d-md-block"></div>
-                        </div> -->
-                        <!-- <div class="row conne-sd-ribbon-top-row">
-                            <div class="col"></div>
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-8 conne-sd-ribbon-top-col">
-                                <img src="assets/img/ribbon_top_1.png"/>
-                                <div class="container-fluid conne-sd-ribbon-top-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row conne-sd-ribbon-bottom-row">
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-8 conne-sd-ribbon-bottom-col">
-                                <img src="assets/img/ribbon_top_2.png"/>
-                                <div class="container-fluid conne-sd-ribbon-bottom-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col"></div>
-                        </div> -->
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Only screen size -->
-        <div class="container block1 d-none d-xl-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 block1-container">
-                        <img src="assets/img/block_1.png" style="height: fit-content;"/>
-                        <div
-                            style=" position: absolute; width: 100%; background-image: url(assets/img/block_1.png); background-repeat: no-repeat; background-size: contain; background-position: center; height: 100%; top: 0; z-index: -999;"></div>
-                        <div class="container justify-content-center block1-body-container">
-                            <div class="row gap-row">
+                <!-- INTRO CONCERT -->
+                <div class="container block1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 block1-container">
+                                <img src="assets/img/block_1.png"/>
                                 <div
-                                    class="col-12 block1-title d-flex align-items-center justify-content-center">
-                                    <div>행사 소개</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container justify-content-center block1-text-container">
-                            <div class="row gap-row">
-                                <div
-                                    class="col-12 block1-sub-title d-flex align-items-center justify-content-center">
-                                    <div>우타이테 콘서트에서</div>
-                                    <div class="meet" style="color: #f0c520;">만남</div>
-                                    <div>을 추구하면 안 되는 걸까?</div>
-                                </div>
-                            </div>
-                            <div class="row gap-row">
-                                <div
-                                    class="col-12 block1-info-title d-flex align-items-center justify-content-center">
-                                    <div>우타코네는 여러분들이 영상으로만 만나던 인기 우타이테 분들을 초청하여 
-                                        모두가 함께 즐길 수 있는 콘서트를 기획하게 되었습니다.
-                                        
-                                        이제 화면 안에서만이 아닌 한 공간에서 우타이테와 함께 
-                                        좋아하는 노래를 현장에서 즐겨보세요!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CONNE CHAN SD -->
-                        <div class="row justify-content-end conne-sd-row">
-                            <div class="col"></div>
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-4 conne-sd-col">
-                                <img src="assets/img/conne_chan_sd.png"/>
-                                <div class="container-fluid conne-sd-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
+                                    style=" position: absolute; width: 100%; background-image: url(assets/img/block_1.png);
+                                    background-repeat: no-repeat; background-size: contain; background-position: center; height: 100%; top: 0; z-index: -999;
+                                    background-position-x: 0px;"></div>
+                                <div class="container justify-content-center block1-body-container">
+                                    <div class="row gap-row">
+                                        <div
+                                            class="col-12 block1-title d-flex align-items-center justify-content-center">
+                                            <span class="link">&nbsp</span>
+                                            행사 소개
+                                            <span class="link">&nbsp</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-1"></div>
-                        </div>
-                        <div class="row justify-content-end conne-sd-quote-row">
-                            <div class="col"></div>
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-4 conne-sd-quote-col">
-                                <img src="assets/img/quote.png"/>
-                                <div class="container-fluid conne-sd-quote-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
+                                <div class="container justify-content-center block1-text-container">
+                                    <div class="row gap-row">
+                                        <div
+                                            class="col-12 block1-sub-title d-flex align-items-center justify-content-center">
+                                            애니송커넥트에서
+                                            <span class="meet" style="color: #f0c520;">만남</span>
+                                            을 추구하면 안 되는 걸까?
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-1"></div>
-                        </div>
-                        <div class="row conne-sd-large-ticket-row">
-                            <div class="col-lg-1 d-none  d-xl-block"></div>
-                            <div class="col-9 col-md-6 col-lg-5 col-xl-4 conne-sd-large-ticket-col">
-                                <img src="assets/img/ticket_large.png"/>
-                                <div class="container-fluid conne-sd-large-ticket-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
+                                    <div class="row gap-row">
+                                        <div
+                                            class="col-12 block1-info-title d-flex align-items-center justify-content-center">
+                                                영상으로만 만나던 인기 보컬 들을 초청하여 
+                                                모두가 함께 즐길 수 있는 콘서트를 기획하게 되었습니다.
+                                                
+                                                이제 화면 안에서만이 아닌 한 공간에서 애니송커넥트와 함께 
+                                                좋아하는 노래를 현장에서 즐겨보세요!
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col d-none d-md-block"></div>
-                        </div>
-                        <!-- <div class="row conne-sd-ribbon-top-row">
-                            <div class="col"></div>
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-8 conne-sd-ribbon-top-col">
-                                <img src="assets/img/ribbon_top_1.png"/>
-                                <div class="container-fluid conne-sd-ribbon-top-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row conne-sd-ribbon-bottom-row">
-                            <div class="col-9 col-md-6 col-lg-6 col-xl-8 conne-sd-ribbon-bottom-col">
-                                <img src="assets/img/ribbon_top_2.png"/>
-                                <div class="container-fluid conne-sd-ribbon-bottom-bg">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col"></div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ARTIST BOARD -->
-        <!-- Only mobile size -->
-        <div class="container-fluid block2 d-xl-none">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 block2-container">
-                        <img src="assets/img/block_2.png"/>
-                        <div
-                            style=" position: absolute; width: 100%; background-image: url(assets/img/block_2.png); background-repeat: no-repeat; background-size: contain; background-position: center; height: 100%; top: 0;"></div>
-                        <div class="container-fluid justify-content-center block2-body-container">
-                            <div class="row gap-row">
-                                <div
-                                    class="col-12 block2-title d-flex align-items-center justify-content-center">
-                                    <div>아티스트</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Only screen size -->
-        <div class="container block2 d-none d-xl-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 block2-container">
-                        <img src="assets/img/block_2.png" style="height: fit-content;"/>
-                        <div
-                            style=" position: absolute; width: 100%; background-image: url(assets/img/block_2.png); background-repeat: no-repeat; background-size: contain; background-position: center; height: 100%; top: 0;"></div>
-                        <div class="container justify-content-center block2-body-container">
-                            <div class="row gap-row">
+                <!-- CONNE CHAN SD -->
+                <div class="container conne-sd-container">
+                    <div class="container conne-sd-container-position">
+                        <div class="row">
+                            <div class="col-4 conne-sd-ticket-large-position">
+                                <img src="assets/img/ticket_large.png" class="conne-sd-ticket-large">
+                            </div>
+                            <div class="col-3 conne-sd-quote-position">
+                                <img src="assets/img/quote.png" class="conne-sd-quote">
+                                <div class="conne-sd-quote-text">소개합니다!</div>
+                            </div>
+                            <div class="col-4">
+                                <img src="assets/img/conne_chan_sd.png" class="conne-sd"/>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIBBON BEHIND OF CONNE CHAN SD -->
+                <div class="container ribbon-container">
+                    <div class="container top">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <img src="assets/img/ribbon_top_1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIBBON FORWARD OF LARGE TICKET -->
+                <div class="container ribbon-container">
+                    <div class="container bottom">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="assets/img/ribbon_top_2.png" alt="">
+                            </div>
+                            <div class="col-6"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SMALL TICKET -->
+                <div class="container ribbon-container">
+                    <div class="container small-ticket">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="assets/img/ticket_small.png" alt="">
+                            </div>
+                            <div class="col-6"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ARTIST BOARD -->
+                <div class="container block2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 block2-container">
+                                <img src="assets/img/block_2.png"/>
                                 <div
-                                    class="col-12 block2-title d-flex align-items-center justify-content-center">
-                                    <div>아티스트</div>
+                                    style=" position: absolute; width: 100%; background-image: url(assets/img/block_2.png);
+                                    background-repeat: no-repeat; background-size: contain; background-position: center; height: 100%; top: 0;
+                                    background-position-x: 0px;"></div>
+                                <div
+                                    class="container justify-content-center block2-body-container"
+                                    style="height: 100%;">
+                                    <div class="row" id="artist_title" hidden="hidden">
+                                        <div
+                                            class="col-12 d-flex align-items-center justify-content-center"
+                                            style="padding-left: 0;
+                                        padding-right: 24px;">
+                                            <div class="artist-title">아티스트</div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="artist_offset" hidden="hidden">
+                                        <div
+                                            class="col-12"
+                                            style="padding-left: 0;
+                                        padding-right: 24px;"></div>
+                                    </div>
+                                    <div class="row" id="artist_box" hidden="hidden">
+                                        <div
+                                            class="col-12"
+                                            style="
+                                        padding-left: 0;
+                                        padding-right: 24px;
+                                    ">
+                                            <div class="row artist-box-row">
+                                                <div class="col-4" style="padding: 7%;" id="artist-box-left">
+                                                    <div class="artist-img"></div>
+                                                </div>
+                                                <div class="col" id="artist-box-right">
+                                                    <div class="row" style="height: 50%;">
+                                                        <div class="col align-bottom" style="position: relative;">
+                                                            <h2 id="name" class="artist-title"></h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" style="height: 50%;">
+                                                        <pre class="col artist-desc" id="desc"></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="artist_hr" hidden="hidden">
+                                        <div class="col-12 d-flex align-items-center justify-content-center">
+                                            <img id="artist-divider-img" src="./assets/img/divider_sparkle.png">
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIBBON BEHIND OF TICKETING GUIDE 1 -->
+                <div class="container ribbon-container">
+                    <div class="container ticketing-1">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <img src="assets/img/ribbon_bottom_1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIBBON BEHIND OF TICKETING GUIDE 2 -->
+                <div class="container ribbon-container">
+                    <div class="container ticketing-2">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <img src="assets/img/ribbon_bottom_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIBBON BEHIND OF TICKETING GUIDE 3 -->
+                <div class="container ribbon-container">
+                    <div class="container ticketing-3">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <img src="assets/img/ribbon_bottom_3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ticketing Guide -->
+                <div class="container-fluid" style="margin-top: 60px;">
+                    <div class="row">
+                        <div class="col-12 ticketing-info">
+                            <!-- <img src="assets/img/ticketing-container-mapped.png" alt=""> -->
+                            <canvas id="ticketing-info-canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coalition -->
+                <div class="container" style="margin-top: 55px;">
+                    <div class="row">
+                        <div class="col-12 coalition">제휴 단체 · 공연</div>
+                    </div>
+                    <div class="row" style="margin-top: 86px; text-align: center;">
+                        <div class="col-6 col-md-3" style="padding: 10px;"><img src="assets/img/instagram.png"></div>
+                        <div class="col-6 col-md-3" style="padding: 10px;"><img src="assets/img/instagram.png"></div>
+                        <div class="col-6 col-md-3" style="padding: 10px;"><img src="assets/img/instagram.png"></div>
+                        <div class="col-6 col-md-3" style="padding: 10px;"><img src="assets/img/instagram.png"></div>
+                    </div>
+                </div>
+                <!-- More button-->
+                <div class="container-fluid" style="margin-top: 86px; position: relative;">
+                    <div class="row" style="text-align: center;">
+                        <div class="col-12"><img src="assets/img/bottom-banner.png" style="max-width: 100%;height: auto;"></div>
+                        <div class="first" style="position: absolute; top:25%;">너와 내가 이어지는
+                            <span class="live">LIVE</span></div>
+                        <div class="second" style="position: absolute; top:40%;">우리의 이야기가 궁금해?</div>
+                        <div class="third" style="position: absolute; top:60%;">
+                            <a href="more.html">더 알아보기 ></a>
+                        </div>
+                    </div>
+                    <!-- <div style="position: absolute;">ss</div> -->
+                </div>
+                <!-- Footer-->
+                <div class="container-fluid" style="margin-top: 105px;">
+                    <div class="row" style="text-align: center;">
+                        <div class="footer g-0">
+                            <hr class="line">
+                            <div class="contain">
+                                <div class="col-12" style="margin-top: 87px;"><img src="assets/img/footer-logo.png"></div>
+                                <div class="col-12" style="margin-top: 23px;"><img src="assets/img/footer-sparkle.png"></div>
+                                <div class="footer_title" style="margin-top: 18px;">ⓒ 2021. ANISONG CONNECT. ALL RIGHT RESERVED.</div>
+                                <div class="col-12" id="auth" style="margin-top: 88px; margin-bottom: 46px"><img src="assets/img/footer-melody.png"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Ticketing Guide -->
-        <div class="container-fluid" style="margin-top: 60px;">
-            <div class="row">
-                <div class="col-12 ticketing-info">
-                    <!-- <img src="assets/img/ticketing-container-mapped.png" alt=""> -->
-                </div>
-            </div>
-        </div>
-        <!-- coalition -->
-        <div class="container-fluid" style="margin-top: 55px;">
-            <div class="row">
-                <div class="col-12 coalition">제휴 단체 · 공연</div>
-            </div>
-            <div class="row" style="margin-top: 86px; text-align: center;">
-                <div class="col-3"><img src="assets/img/instagram.png"></div>
-                <div class="col-3"><img src="assets/img/instagram.png"></div>
-                <div class="col-3"><img src="assets/img/instagram.png"></div>
-                <div class="col-3"><img src="assets/img/instagram.png"></div>
-            </div>
-        </div>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
             crossorigin="anonymous"></script>
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any
+        Firebase services -->
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed
+        first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for
+        Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+        <!-- Add the standard Performance Monitoring library -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-performance.js"></script>
+        <script>
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyDO8ktHyj4xjeR1Pl062QkNYZ7exCCCIFE",
+                authDomain: "uta-conne.firebaseapp.com",
+                projectId: "uta-conne",
+                storageBucket: "uta-conne.appspot.com",
+                messagingSenderId: "161018803676",
+                appId: "1:161018803676:web:7e086c9af1e90703bccb19",
+                measurementId: "G-KCS7BSHSED"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+            const analytics = firebase.analytics();
+            const perf = firebase.performance();
+        </script>
+        <script src="src/ticketing-info.js"></script>
+        <script src="src/artist.js"></script>
+        <script src="src/firebase-script.js"></script>
+        <script src="src/sns.js"></script>
+        <script src="src/title.js"></script>
     </body>
 </html>

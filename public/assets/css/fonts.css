@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'GmarketSans-Bold';
+    src: 
+            url("../fonts/GmarketSansOTF/GmarketSansBold.otf") format("opentype"),
+            url('../fonts/GmarketSansTTF/GamrketSansTTFBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GmarketSans-Light';
+    src: 
+            url("../fonts/GmarketSansOTF/GmarketSansLight.otf") format("opentype"),
+            url('../fonts/GmarketSansTTF/GamrketSansTTFLight.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'GmarketSans-Medium';
+    src: 
+            url("../fonts/GmarketSansOTF/GmarketSansMedium.otf") format("opentype"),
+            url('../fonts/GmarketSansTTF/GamrketSansTTFMedium.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'KoPubWorldDotum';
+    src:  
+        url("../fonts/KOPUBWORLD_OTF/KoPubWorldDotum_ProLight.otf") format("opentype"),
+        url('../fonts/KOPUBWORLD_TTF/KoPubWorldDotumLight.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'GmarketSans-KSCpc-EUC-H';
+    src:  
+        url("../fonts/GmarketSansOTF/GmarketSansMedium.otf") format("opentype"),
+        url('../fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'GodoB';
+    src:  
+        url("../fonts/GodoB_OTF/GodoB.otf") format("opentype"),
+        url('../fonts/GodoB_TTF/GodoB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GodoM';
+    src:  
+        url("../fonts/GodoM_OTF/GodoM.otf") format("opentype"),
+        url('../fonts/GodoM_TTF/GodoM.ttf') format('truetype');
+}

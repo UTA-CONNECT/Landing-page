@@ -1,0 +1,265 @@
+.ribbon-container {
+    position: relative;
+}
+
+.ribbon-container .top {
+    position: absolute;
+    left: 0;
+    top: -600px;
+    z-index: -9;
+    pointer-events: none;
+}
+
+.ribbon-container .top img {
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.ribbon-container .bottom {
+    position: absolute;
+    left: -150px;
+    top: -57px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.ribbon-container .bottom img {
+    width: 100%;
+}
+
+.ribbon-container .small-ticket {
+    position: absolute;
+    left: -150px;
+    top: 950px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.ribbon-container .small-ticket img {
+    width: 100%;
+}
+
+.ribbon-container .ticketing-1 {
+    position: absolute;
+    left: -232px;
+    top: -596px;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.ribbon-container .ticketing-1 img {
+    /* width: 100%; */
+    margin-left: 640px;
+}
+
+.ribbon-container .ticketing-2 {
+    position: absolute;
+    left: -40px;
+    top: -222px;
+    z-index: -9;
+    pointer-events: none;
+}
+
+.ribbon-container .ticketing-2 img {
+    /* width: 100%; */
+    margin-left: 640px;
+}
+
+.ribbon-container .ticketing-3 {
+    position: absolute;
+    left: -50px;
+    top: -80px;
+    z-index: -9;
+    pointer-events: none;
+}
+
+.ribbon-container .ticketing-3 img {
+    /* width: 100%; */
+    margin-left: 71px;
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    .ribbon-container .top img {
+        visibility: hidden;
+        display: none;
+    }
+    .ribbon-container .bottom img {
+        visibility: hidden;
+        display: none;
+    }
+    .ribbon-container .small-ticket {
+        visibility: hidden;
+        display: none;
+    }
+
+    .ribbon-container .ticketing-2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .ribbon-container .ticketing-1 {
+        visibility: hidden;
+        display: none;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+    .ribbon-container .top {
+        left: 0;
+        top: -150px;
+    }
+    .ribbon-container .top img {
+        margin-left: 90px;
+        margin-top: 0px;
+        width: 70%;
+        visibility: inherit;
+        display: initial;
+    }
+    .ribbon-container .bottom {
+        left: -30px;
+        top: -15px;
+    }
+    .ribbon-container .bottom img {
+        width: 70%;
+        visibility: inherit;
+        display: initial;
+    }
+    .ribbon-container .small-ticket {
+        left: -70px;
+        top: 380px;
+        visibility: inherit;
+        display: initial;
+    }
+
+    .ribbon-container .ticketing-2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .ribbon-container .ticketing-1 {
+        visibility: hidden;
+        display: none;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .ribbon-container .top {
+        left: 0;
+        top: -200px;
+    }
+    .ribbon-container .top img {
+        margin-left: 120px;
+        margin-top: 0px;
+        width: 70%
+    }
+    .ribbon-container .bottom {
+        left: -30px;
+        top: -20px;
+    }
+    .ribbon-container .bottom img {
+        width: 70%;
+    }
+    .ribbon-container .small-ticket {
+        left: -90px;
+        top: 520px;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .ribbon-container .top {
+        left: 0;
+        top: -250px;
+    }
+    .ribbon-container .top img {
+        margin-left: 150px;
+        margin-top: 0px;
+        width: 70%
+    }
+    .ribbon-container .bottom {
+        left: -50px;
+        top: -28px;
+    }
+    .ribbon-container .bottom img {
+        width: 70%;
+    }
+    .ribbon-container .small-ticket {
+        left: -150px;
+        top: 690px;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+        left: -157px;
+        top: -80px;
+    }
+}
+@media (min-width: 1200px) {
+    .ribbon-container .top {
+        left: 0;
+        top: -500px;
+    }
+    .ribbon-container .top img {
+        margin-left: 30px;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .ribbon-container .bottom {
+        left: -100px;
+        top: -50px;
+    }
+    .ribbon-container .bottom img {
+        width: 100%;
+    }
+    .ribbon-container .small-ticket {
+        left: -150px;
+        top: 800px;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 1400px) {
+    .ribbon-container .top {
+        left: 0;
+        top: -600px;
+    }
+    .ribbon-container .top img {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .ribbon-container .bottom {
+        left: -150px;
+        top: -57px;
+    }
+    .ribbon-container .small-ticket {
+        left: -150px;
+        top: 950px;
+    }
+    .ribbon-container .ticketing-3 {
+        visibility: inherit;
+        display: initial;
+        left: -40px;
+        top: -63px;
+    }
+    .ribbon-container .ticketing-2 {
+        visibility: inherit;
+        display: initial;
+    }
+
+    .ribbon-container .ticketing-1 {
+        visibility: inherit;
+        display: initial;
+    }
+}

@@ -1,0 +1,40 @@
+div.concert-info-block {
+    position: relative;
+    padding: 0;
+}
+
+div.concert-info-block-position {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+}
+
+@media (max-width: 576px) {
+    div.concert-info-block-position {
+        top: -400px;
+    }
+}
+@media (min-width: 576px) {
+    div.concert-info-block-position {
+        top: -340px;
+    }
+}
+@media (min-width: 768px) {
+    div.concert-info-block-position {
+        top: -280px;
+    }
+}
+@media (min-width: 992px) {
+    div.concert-info-block-position {
+        top: -200px;
+    }
+}
+@media (min-width: 1200px) {
+    div.concert-info-block-position {
+        top: -250px;
+        /* z-index: -1; */
+    }
+}
+@media (min-width: 1400px) {
+}

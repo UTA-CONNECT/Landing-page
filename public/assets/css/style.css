@@ -17,11 +17,6 @@ body {
     /* background-size: contain, contain; */
 }
 
-div.meet {
-    transform: rotate(-7deg);
-    padding-left: 5px;
-}
-
 div.block1 {
     /* background-image: url("../img/block_1.png"); */
     background-repeat: no-repeat;
@@ -56,11 +51,16 @@ div.block1-container div.block1-body-container div.block1-text-container .gap-ro
     margin: 0 auto;
 }
 
-div.block1-title {
-    height: 160px;
+span.link {
+    padding-left: 10%;
+    background-image: url('../img/link.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;    
 }
 
-div.block1-title div {
+div.block1-title {
+    height: 200px;
+    font-family: GmarketSans-Bold;
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
@@ -72,11 +72,9 @@ div.block1-title div {
 }
 
 div.block1-sub-title {
-    height: 150px;
-}
-
-div.block1-sub-title div {
-    font-size: 25px;
+    height: 200px;
+    font-family: GmarketSans-Bold;
+    font-size: 30px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -85,21 +83,23 @@ div.block1-sub-title div {
     text-align: center;
     color: #333333;
 }
-
 div.block1-info-title {
-    height: 100px;
-}
-
-div.block1-info-title div {
+    height: 10px;
+    font-family: KoPubWorldDotum;
     font-size: 24.4px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    text-align: cen;
+    text-align: left;
     color: #333333;
     white-space: pre-line;
+}
+
+span.meet {
+    transform: rotate(-10deg);
+    padding-left: 5px;
 }
 
 div.block2 {
@@ -134,6 +134,7 @@ div.block2-title {
 }
 
 div.block2-title div {
+    font-family: GmarketSans-Bold;
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
@@ -170,141 +171,11 @@ div.title-ribbon {
     margin-top: 365px;
     margin-left: 0;
     margin-right: 0;
-    animation: upDown 1.5s alternate infinite ease-in-out;
+    animation: upDown-tiny 1.5s alternate infinite ease-in-out;
 }
 
 div.title-ribbon img {
     width: 100%;
-}
-
-@media (max-width: 500px) {
-    div.block1-title div {
-        font-size: 25px;
-        line-height: 1;
-        height: 130px;
-    }
-
-    div.block2-title div {
-        font-size: 25px;
-        line-height: 1;
-        height: 150px;
-    }
-
-    div.block1-sub-title div {
-        font-size: 12px;
-        line-height: 1;
-        height: 320px;
-    }
-    div.block1-info-title div {
-        font-size: 11px;
-        line-height: 1;
-        height: 520px;
-    }
-
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 20px;
-    }
-}
-
-@media (min-width:500px) and (max-width: 576px) {
-    div.block1-title div {
-        font-size: 25px;
-        line-height: 1;
-        height: 120px;
-    }
-
-    div.block2-title div {
-        font-size: 25px;
-        line-height: 1;
-        height: 150px;
-    }
-
-    div.block1-sub-title div {
-        font-size: 15px;
-        line-height: 1;
-        height: 280px;
-    }
-    div.block1-info-title div {
-        font-size: 15px;
-        line-height: 1;
-        height: 470px;
-    }
-
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 20px;
-    }
-}
-
-@media (min-width:576px) and (max-width: 768px) {
-    div.title-ribbon img {
-        width: 100%;
-    }
-
-    div.block2-container div.block2-body-container .gap-row {
-        width: 100%;
-        top: -150px;
-        margin: 0 auto;
-    }
-
-    div.block1-title div {
-        font-size: 30px;
-        line-height: 1;
-        height: 80px;
-    }
-
-    div.block2-title div {
-        font-size: 30px;
-        line-height: 1;
-        height: 100px;
-    }
-
-    div.block1-sub-title div {
-        font-size: 20px;
-        line-height: 1;
-        height: 230px;
-    }
-    div.block1-info-title div {
-        font-size: 15px;
-        line-height: 1;
-        height: 400px;
-    }
-
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 15px;
-    }
-}
-
-@media (min-width:768px) and (max-width: 992px) {
-    div.block1-title div {
-        font-size: 40px;
-        line-height: 1;
-        height: 80px;
-    }
-
-    div.block2-title div {
-        font-size: 40px;
-        line-height: 1;
-        height: 100px;
-    }
-
-    div.block1-sub-title div {
-        font-size: 25px;
-        line-height: 1;
-        height: 150px;
-    }
-    div.block1-info-title div {
-        font-size: 20px;
-        line-height: 1;
-        height: 250px;
-    }
-
-    div.meet {
-        transform: rotate(-7deg);
-        padding-left: 15px;
-    }
 }
 
 div.title-ribbon div {
@@ -323,11 +194,10 @@ div.conne-top-container-back {
     background-position: center;
     background-size: cover;
     min-height: 1000px;
-    animation: upDown 1.5s alternate infinite ease-in-out;
+    animation: upDown-little 1.5s alternate infinite ease-in-out;
 }
 
 div.conne-top-container-small-back {
-
     position: absolute;
     z-index: -1;
     /* position: absolute; */
@@ -339,7 +209,7 @@ div.conne-top-container-small-back {
     background-position: center;
     background-size: cover;
     min-height: 1000px;
-    animation: upDown 1.5s alternate infinite ease-in-out;
+    animation: upDown-little 1.5s alternate infinite ease-in-out;
 }
 
 div.conne-top-container {
@@ -373,9 +243,12 @@ div.date-place-info {
     font-weight: bold;
     margin-top: 40px;
     text-align: center;
-    transform: rotate(7deg);
+    /* transform: rotate(7deg); */
     font-size: 1.5em;
     letter-spacing: 7px;
+    font-style: italic;
+    transform: scale(1) rotate(7deg) translate(0px, 0px) skew(18deg, 0deg);
+    font-family: GmarketSans-Bold;
     /* padding: 20px; */
 }
 
@@ -384,14 +257,17 @@ div.date-place-info-small {
     font-weight: bold;
     margin-top: 40px;
     text-align: center;
-    transform: rotate(7deg);
-    font-size: 1.2em;
+    /* transform: rotate(7deg); */
+    font-size: 0.9em;
     letter-spacing: 2.5px;
+    font-style: italic;
+    transform: scale(1) rotate(7deg) translate(0px, 0px) skew(18deg, 0deg);
+    font-family: GmarketSans-Bold;
     /* padding: 20px; */
 }
 
 div.coalition {
-    /* font-family: GmarketSans; */
+    font-family: GmarketSans-Bold;
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
@@ -402,7 +278,241 @@ div.coalition {
     color: #333333;
 }
 
+div.first {
+    font-family: GodoB;
+    font-size: 27.3px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+div.second {
+    font-family: GodoM;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+div.third {
+    font-family: GodoB;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+span.live {
+    font-family: GodoB;
+    font-size: 27.3px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fccd21;
+}
+
 img.title {
     margin-top: 300px;
     width: 100%;
+}
+
+A:link {
+    text-decoration: none;
+    color: black;
+}
+A:visited {
+    text-decoration: none;
+    color: black;
+}
+A:hover {
+    text-decoration: none;
+    color: red;
+}
+@media (max-width: 500px) {
+    div.block1 {
+        padding-bottom: 50px;
+    }
+
+    div.block1-container div.block1-text-container {
+        top: 12vw;
+    }
+
+    div.block1-title {
+        font-size: 20px;
+        line-height: 1;
+        height: 50px;
+    }
+    div.block1-sub-title {
+        font-size: 10px;
+        line-height: 1;
+        height: 10vw;
+    }
+    div.block1-info-title {
+        font-size: 9px;
+        line-height: 1;
+        height: 10vw;
+    }
+
+    span.meet {
+        padding-left: 3px;
+    }
+
+    div.first {
+        font-size: 17.3px;
+    }
+    div.second {
+        font-size: 13px;
+    }
+    div.third {
+        font-size: 13px;
+    }
+    span.live {
+        font-size: 17.3px;
+    }
+
+    img.title {
+        margin-top: 240px;
+    }
+}
+@media (min-width:500px) and (max-width: 576px) {
+    div.block1 {
+        padding-bottom: 70px;
+    }
+    
+    div.block1-container div.block1-text-container {
+        top: 50px;
+    }
+
+    div.block1-title {
+        font-size: 25px;
+        height: 70px;
+    }
+    div.block1-sub-title {
+        font-size: 18px;
+        height: 90px;
+    }
+    div.block1-info-title {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    div.first {
+        font-size: 25px;
+    }
+    div.second {
+        font-size: 18px;
+    }
+    div.third {
+        font-size: 18px;
+    }
+    span.live {
+        font-size: 25px;
+    }
+
+    img.title {
+        margin-top: 200px;
+    }
+}
+@media (min-width:576px) and (max-width: 767px) {
+    div.title-ribbon img {
+        width: 100%;
+    }
+
+    div.block2-container div.block2-body-container .gap-row {
+        width: 100%;
+        top: -150px;
+        margin: 0 auto;
+    }
+    
+    div.block1 {
+        padding-bottom: 70px;
+    }
+    
+    div.block1-container div.block1-text-container {
+        top: 80px;
+    }
+
+    div.block1-title {
+        font-size: 30px;
+        height: 100px;
+    }
+    div.block1-sub-title {
+        font-size: 20px;
+        height: 50px;
+    }
+    div.block1-info-title {
+        font-size: 15px;
+        height: 70px;
+    }
+
+    img.title {
+        margin-top: 225px;
+    }
+}
+@media (min-width:768px) and (max-width: 991px) {
+    div.block1-container div.block1-text-container {
+        top: 100px;
+    }
+
+    div.block1-title {
+        font-size: 40px;
+        height: 120px;
+    }
+    div.block1-sub-title {
+        font-size: 25px;
+        height: 90px;
+    }
+    div.block1-info-title {
+        font-size: 19px;
+        height: 70px;
+    }
+
+    img.title {
+        margin-top: 250px;
+    }
+}
+@media (min-width:992px) and (max-width: 1199px) {
+    div.block1-title {
+        font-size: 40px;
+        height: 150px;
+    }
+    div.block1-sub-title {
+        font-size: 30px;
+        height: 70px;
+    }
+    div.block1-info-title {
+        font-size: 24.4px;
+        height: 120px;
+    }
+
+    img.title {
+        margin-top: 300px;
+    }
+}
+@media (min-width:1200px) and (max-width: 1399px) {
+    div.block1-title {
+        height: 170px;
+    }
+
+    div.block1-sub-title {
+        height: 150px;
+    }
+    div.block1-info-title {
+        height: 40px;
+    }
 }

@@ -60,7 +60,7 @@
         font-size: 12px;
     }
     .concept-title-section-position {
-        top: -32px;
+        top: 12px;
     }
 }
 @media (min-width: 576px) {
@@ -73,7 +73,7 @@
         font-size: 18px;
     }
     .concept-title-section-position {
-        top: -32px;
+        top: 12px;
     }
 }
 @media (min-width: 768px) {
@@ -86,7 +86,7 @@
         font-size: 20px;
     }
     .concept-title-section-position {
-        top: -32px;
+        top: 12px;
     }
 }
 @media (min-width: 992px) {
@@ -99,7 +99,7 @@
         font-size: 25px;
     }
     .concept-title-section-position {
-        top: -62px;
+        top: -12px;
     }
 }
 @media (min-width: 1200px) {
@@ -112,11 +112,11 @@
         font-size: 30px;
     }
     .concept-title-section-position {
-        top: -82px;
+        top: -32px;
     }
 }
 @media (min-width: 1400px) {
     .concept-title-section-position {
-        top: -92px;
+        top: -42px;
     }
 }
